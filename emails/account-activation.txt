@@ -1,0 +1,33 @@
+
+Hi [Name],<br /><br />
+
+<p>Your Portal account has been activated. Please contact support to get necessary Rights to perform your daily tasks on the Portal.</p>
+
+<p>Your account registration summary is as follows:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="500">
+  <tr>
+    <td width="120">Full Name</td>
+    <td>[Name]</td>
+  </tr>
+  
+  <tr>
+    <td>Email Address</td>
+    <td>[Email]</td>
+  </tr>
+  
+  <tr>
+    <td>Username</td>
+    <td>[Username]</td>
+  </tr>
+
+  <tr>
+    <td>Country</td>
+    <td>[Country]</td>
+  </tr>
+</table>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

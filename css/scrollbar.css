@@ -1,0 +1,92 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+.scrollgeneric
+{
+  line-height  :  1px;
+  font-size    :  1px;
+  position     :  absolute;
+  top          :  0;
+  left         :  0;
+}
+
+.vscrollerbase
+{
+  width       :  10px;
+  background  :  #000000;
+}
+
+.vscrollerbar
+{
+  width       :  10px;
+  background  :  #b6e500;
+  cursor      :  move;
+}
+
+.hscrollerbase
+{
+  height      :  1px;
+  background  :  #000000;
+}
+
+.hscrollerbar
+{
+  width       :  1px;
+  height      :  1px;
+  background  :  #000000;
+}
+
+.scrollerjogbox
+{
+  width       :  10px;
+  height      :  1px;
+  top         :  auto;
+  left        :  auto;
+  bottom      :  0px;
+  right       :  0px;
+  background  :  #000000;
+}
+
+.vsr
+{
+  position  :  relative;
+  overflow  :  auto;
+  width     :  100%;
+  height    :  750px;
+  outline   :  none;
+}
+
+.feeds
+{
+  position       :  relative;
+  overflow       :  auto;
+  width          :  99%;
+  height         :  321px;
+  outline        :  none;
+  padding-right  :  5px;
+}

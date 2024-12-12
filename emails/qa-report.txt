@@ -1,0 +1,28 @@
+
+Dear Reader,<br />
+
+<p>The summary of Audit Report for "[PO] - [Brand]" is as follows.</p>
+
+Audit Code: [AuditCode]<br />
+Auditor: [Auditor]<br />
+Vendor: [Vendor]<br />
+Brand: [Brand]<br />
+Style: [Style]<br />
+Audit Stage: [AuditStage]<br />
+Sample size: [SampleSize]<br />
+Audit Result: [Result]<br />
+<br />
+[DefectsSummary]<br />
+[SpecsSummary]<br />
+<br />
+<b>Auditor Comments:</b><br />
+[Comments]<br />
+<br />
+<br />
+PDF Report Version: <a href="[PdfLink]" download>Download</a><br />
+<br />
+<br />
+Triple Tree Customer Portal<br />
+<a href="http://portal.3-tree.com">http://portal.3-tree.com</a><br />
+<br />
+<small style="color:#999999;">This is a system generated e-mail. Please do not reply directly to this e-mail. The originating e-mail account is not monitored.</small>

@@ -1,0 +1,41 @@
+
+Hello!<br />
+
+<p>You have received a new samples request. The request details are as follows:</p>
+
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+  <tr>
+    <td width="120">Name</td>
+    <td>[Name]</td>
+  </tr>
+  
+  <tr>
+    <td>Email Address</td>
+    <td>[Email]</td>
+  </tr>
+  
+  <tr>
+    <td>Styles</td>
+    <td>[Styles]</td>
+  </tr>
+  
+  <tr>
+    <td>Subject</td>
+    <td>[Subject]</td>
+  </tr>
+  
+  <tr valign="top">
+    <td>Message</td>
+    <td>[Message]</td>
+  </tr>
+  
+  <tr>
+    <td>Required Date</td>
+    <td>[Date]</td>
+  </tr>
+</table>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

@@ -1,0 +1,2077 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+:focus
+{
+  -moz-outline-style  :  none;
+}
+
+body
+{   
+  margin      :  0px auto 0px auto;
+  background  :  #a1a1a1;
+}
+
+body.cke_show_borders
+{
+  background  :  #ffffff;
+  margin      :  0px;
+}
+
+table
+{
+  border-collapse  :  collapse;
+  border-spacing   :  0;
+  table-layout     :  fixed;  
+
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #333333;
+}
+
+td, div
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+}
+
+h1
+{
+  font-family     :  arial, verdana, sans-serif;
+  font-weight     :  bold;
+  font-size       :  24px;
+  color           :  #a8a6a7;
+  
+  text-transform  :  uppercase;
+  
+  padding         :  0px 0px 0px 10px;
+  margin          :  0px 0px 5px 0px;
+  background      :  #494949;
+  height          :  40px;
+  line-height     :  40px;
+}
+
+h1.green
+{
+  color       :  #ffffff;
+  background  :  #A50716;
+}
+
+h1.gray
+{
+  color       :  #494949;
+  background  :  #d9d9d9;
+}
+
+h1.darkGray
+{
+  color       :  #b6e500;
+  background  :  #666666;
+}
+
+h1.small
+{
+  font-size    :  17px;
+  color        :  #ffffff;
+  
+  height       :  29px;
+  line-height  :  29px;
+}
+
+h1 span
+{
+  text-transform  :  none;
+  float           :  right;
+  margin-right    :  10px;
+}
+
+h2
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #ffffff;
+  
+  padding      :  5px 0px 5px 10px;
+  margin       :  0px 0px 10px 0px;
+  background   :  #666666;
+}
+
+h2.green
+{
+  color       :  #ffffff;
+  background  :  #b6e500;
+}
+
+h3
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #000000;
+  
+  padding      :  5px 0px 5px 10px;
+  margin       :  0px;
+  background   :  #dddddd;
+}
+
+h3.green
+{
+  color       :  #ffffff;
+  background  :  #b6e500;
+  margin      :  0px 0px 1px 0px;
+}
+
+h4
+{
+  font-family    :  verdana, arial, sans-serif;
+  font-weight    :  bold;
+  font-size      :  12px;
+  color          :  #444444;
+  
+  padding        :  0px 0px 2px 0px;
+  margin         :  0px 0px 5px 0px;
+  border-bottom  :  solid 1px #666666;
+}
+
+a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #0066cb;
+   
+  text-decoration  :  none;
+}
+  
+a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #000000;
+   
+  text-decoration  :  underline;
+}
+
+a img
+{
+  border  :  none;
+}
+
+small, small a, small a:hover
+{
+  font-size  :  10px;
+}
+
+ul, ol
+{
+  margin  :  5px 0px 15px 0px;
+}
+
+li
+{
+  padding  :  0px 0px 5px 0px;
+}
+
+hr
+{
+  border-top     :  dotted 1px #444444;
+  border-left    :  solid 1px #ffffff;
+  border-right   :  solid 1px #ffffff;
+  border-bottom  :  dotted 1px #ffffff;
+  padding        :  0px;
+  margin         :  15px 0px 15px 0px;
+  _margin        :  10px 0px 10px 0px;
+  #margin        :  10px 0px 10px 0px;
+  font-size      :  1px;
+}
+
+form
+{
+  margin  :  0px;  
+}
+
+input.textbox, select, textarea
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+  
+  padding      :  2px;
+  background   :  #ffffff;
+  border       :  solid 1px #aaaaaa;
+}
+
+select
+{
+  padding    :  1px;
+  max-width  :  90%;
+}
+
+div.textboxBg
+{
+  width       :  148px;
+  padding     :  4px 8px 12px 7px;  
+  background  :  #ffffff url('../images/textbox-bg.jpg') left top no-repeat;
+}
+
+div.textboxBg input
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+  
+  width        :  132px;
+  background   :  #ffffff;
+  border       :  none;
+}
+
+textarea
+{
+  min-height            :  50px;
+  scrollbar-base-color  :  #cccccc;
+}
+
+input.file
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+  
+  padding      :  2px;
+}
+
+input.button
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  font-weight  :  bold;
+  color        :  #333333;
+  
+  padding      :  3px;
+  cursor       :  pointer;
+}
+
+input.btnSmall
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  10px;
+  font-weight  :  bold;
+  color        :  #666666;
+  
+  padding      :  2px 2px 1px 2px;
+  cursor       :  pointer;
+}
+
+.mandatory, .error, .red
+{
+  font-weight  :  bold;
+  font-size    :  12px;
+  color        :  #ff0000;
+}
+
+.buttonsBar
+{
+  height      :  30px;
+  background  :  #494949;
+}
+
+.buttonsBar .options
+{
+  float    :  right;
+  padding  :  5px 0px 0px 0px;
+}
+
+.buttonsBar .options input, .buttonsBar .options b
+{
+  float    :  left;
+  display  :  block;
+  color    :  #ffffff;
+  padding  :  3px 15px 0px 2px;
+}
+
+html, body, #MainDiv
+{
+  _height    :  100%;
+  _width     :  100%;  
+  _overflow  :  hidden;
+}
+
+#MainDiv
+{
+  margin       :  0px auto 0px auto;
+  width        :  1001px;
+  _width       :  100%;
+  
+  _overflow-y  :  scroll;
+  _overflow-x  :  hidden;
+  _position    :  relative;
+}
+
+#PageLeftBorder
+{
+  _width      :  1001px;
+  _margin     :  0px auto 0px auto;
+  background  :  url('../images/page-left-border.jpg') left top repeat-y;
+}
+
+#PageRightBorder
+{
+  background  :  url('../images/page-right-border.jpg') right top repeat-y;
+  padding     :  0px 15px 0px 15px;
+}
+
+#PageContents
+{
+  padding     :  10px 20px 50px 20px;
+  background  :  #ffffff;
+  text-align  :  left;
+}
+
+
+#Header 
+{
+  background  :  #2a2a2a;
+  height      :  90px;
+  overflow    :  hidden;
+  position    :  relative;
+}
+
+#Header .qrc
+{
+  position  :  absolute;
+  right     :  5px;
+  top       :  5px;
+}
+
+#Navigation
+{
+  padding  :  5px 0px 5px 0px;
+}
+
+#Navigation #MainNav
+{
+  background  :  #d9d9d9;
+  line-height :  30px;
+  min-height  :  30px;
+  max-height  :  30px;
+}
+
+#Navigation #MainNav a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  13px;
+  color            :  #555555;
+   
+  text-decoration  :  none;
+  
+  display          :  block;
+  float            :  left;
+  padding          :  0px 12px 0px 12px;
+  line-height      :  30px;
+  background       :  #d9d9d9;
+  border-right     :  solid 1px #e6e6e6;
+}
+
+#Navigation #MainNav a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  13px;
+  color            :  #ffffff;
+   
+  text-decoration  :  none;
+  
+  display          :  block;
+  float            :  left;
+  padding          :  0px 12px 0px 12px;
+  line-height      :  30px;
+  background       :  #999999;
+  border-right     :  solid 1px #eeeeee;
+}
+
+#Navigation #MainNav a.selected, #Navigation #MainNav a.selected:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  13px;
+  color            :  #A50716;
+   
+  text-decoration  :  none;
+  
+  display          :  block;
+  float            :  left;
+  padding          :  0px 13px 0px 13px;
+  line-height      :  30px;
+  background       :  #969696;
+  border-right     :  solid 1px #eeeeee;
+}
+
+#Navigation #SubNav
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  12px;
+  color        :  #b1b1b1;
+  
+  clear        :  both;
+  _height      :  28px;
+  line-height  :  28px;
+  background   :  #969696;
+  padding      :  0px 8px 0px 8px;
+}
+
+#Navigation #SubNav span
+{
+  color  :  #eeeeee;
+}
+
+#Navigation #SubNav a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #ffffff;
+   
+  text-decoration  :  none;
+}
+  
+#Navigation #SubNav a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #A50716;
+   
+  text-decoration  :  none;
+}
+
+#Navigation #Trail
+{
+  font-family   :  verdana, arial, sans-serif;
+  font-size     :  12px;
+  color         :  #666666;
+  
+  height        :  26px;
+  line-height   :  26px;  
+  background    :  #f0f0f0;
+  padding       :  0px 8px 0px 8px;
+}
+
+#Navigation #Trail a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #666666;
+   
+  text-decoration  :  none;
+}
+  
+#Navigation #Trail a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #0958a7;
+   
+  text-decoration  :  underline;
+}
+
+#Navigation #Trail b
+{
+  color :  #333333;
+}
+
+#Navigation #Trail img
+{
+  width    :  5px;
+  height   :  8px;
+  margin   :  0px 3px 0px 3px;
+  _margin  :  10px 3px 0px 3px;
+}
+
+#Body
+{
+  min-height   :  252px;
+  #min-height  :  240px;  
+  _height      :  220px;
+  z-index      :  10;
+  position     :  relative;
+}
+
+#Footer
+{
+  margin-top  :  5px;
+}
+ 
+#Footer #Terms
+{
+  background   :  #d9d9d9;
+  line-height  :  28px;
+  height       :  28px;
+  padding      :  0px 5px 0px 5px;
+  
+  font-family  :  arial, verdana, sans-serif;
+  font-size    :  11px;
+  color        :  #000000;  
+  
+  text-align   :  center;
+}
+
+#Footer #Terms a
+{
+  font-family      :  arial, verdana, sans-serif;
+  font-size        :  11px;
+  color            :  #000000;  
+  
+  text-decoration  :  underline;
+}
+
+#Footer #Terms a:hover
+{
+  font-family      :  arial, verdana, sans-serif;
+  font-size        :  11px;
+  color            :  #555555;  
+  
+  text-decoration  :  none;
+}
+
+#Footer #FooterLinks
+{
+  background   :  #f0f0f0;
+  line-height  :  25px;
+  height       :  25px;
+  padding-left :  10px;
+  margin       :  5px 0px 20px 0px;
+  border-top   :  solid 2px #666666;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;  
+  color        :  #b1b1b1;
+}
+
+#Footer #FooterLinks a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #0066cb;  
+  
+  text-decoration  :  none;
+}
+
+#Footer #FooterLinks a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #494949;  
+  
+  text-decoration  :  underline;
+}
+
+#Footer #Copyright
+{
+  line-height  :  15px;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #000000;  
+  
+  text-align   :  center;
+}
+
+#Footer #Copyright big
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  15px;
+  font-weight  :  bold;  
+  color        :  #666666;  
+}
+
+#Paging
+{
+  height       :  28px;
+  line-height  :  28px;
+  padding      :  0px 6px 0px 6px;
+  margin-top   :  4px;
+  background   :  #A50716;
+}
+
+#Paging td
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  12px;
+  color        :  white;
+}
+
+#Paging a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #ffffff;  
+  
+  text-decoration  :  none;
+}
+
+#Paging a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  12px;
+  color            :  #333333;  
+  
+  text-decoration  :  none;
+}
+
+#Paging a span
+{
+  font-size  :  14px;
+}
+
+#Alert
+{
+  border-bottom  :  solid 2px #000000;
+  background     :  #f2edc2;
+  padding        :  5px;
+
+  font-family    :  tahoma, verdana, arial;
+  font-size      :  13px;
+  font-weight    :  bold;
+  color          :  #444444;
+  
+  text-align     :  left;
+}
+
+#Info
+{
+  border-bottom  :  solid 2px #000000;
+  background     :  #ffead2;
+  padding        :  5px;
+
+  font-family    :  tahoma, verdana, arial;
+  font-size      :  13px;
+  font-weight    :  bold;
+  color          :  #444444;
+  
+  text-align     :  left;
+}
+
+#Error
+{
+  border-bottom  :  solid 2px #000000;
+  background     :  #ec4444;
+  padding        :  5px;
+
+  font-family    :  tahoma, verdana, arial;
+  font-size      :  13px;
+  font-weight    :  bold;
+  color          :  #ffffff;
+  
+  text-align     :  left;
+}
+
+#Processing
+{
+  border       :  solid 2px #e59408;
+  background   :  #f9f7e0;
+  padding      :  5px 0px 5px 10px;
+  position     :  fixed;
+  _position    :  absolute;
+  left         :  -2px;
+  top          :  30px;
+  width        :  250px;
+  line-height  :  32px;
+  z-index      :  10000;
+  overflow     :  hidden;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  11px;
+  color        :  #444444;
+}
+
+#Processing img
+{
+  float   :  left;
+  margin  :  0px 10px 0px 0px;
+  width   :  32px;
+  height  :  32px;
+}
+
+#UserMessage
+{
+  border       :  solid 2px #666666;
+  background   :  #f9f9f9;
+  padding      :  5px 25px 5px 10px;
+  position     :  fixed;
+  _position    :  absolute;
+  left         :  -2px;
+  top          :  30px;
+  line-height  :  32px;
+  z-index      :  10000;
+  overflow     :  hidden;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  11px;
+  color        :  #000000;
+}
+
+.msgOk
+{
+  margin-top  :  10px;
+}
+
+.msgOk div
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  12px;
+  color        :  #000000;
+  
+  padding      :  18px 10px 18px 55px;
+  background   :  #f1edcd url('../images/icons/ok.png') 12px 9px no-repeat;
+}
+
+div.autocomplete
+{
+  background  :  #ffffff;
+  margin      :  0px;
+  padding     :  0px;
+  border      :  solid 1px #aaaaaa;
+  z-index     :  1000000;
+  overflow    :  auto;
+  max-height  :  200px;
+  _height     :  200px;
+}
+
+div.autocomplete ul
+{
+  list-style-type  :  none;
+  margin           :  0px;
+  padding          :  0px;
+  border-bottom    :  dotted 1px #000000;
+}
+
+div.autocomplete ul li.selected
+{
+  background  :  #f7ef9b;
+}
+
+div.autocomplete ul li
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  10px;
+  color        :  #000000;
+  
+  display      :  block;
+  margin       :  0px;
+  padding      :  2px 2px 2px 5px;
+  line-height  :  15px;
+  cursor       :  pointer;
+  border-top   :  dotted 1px #000000;
+}
+
+form.inplaceeditor-form
+{
+  margin  :  0px;
+}
+
+form.inplaceeditor-form input[type="text"]
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+  
+  padding      :  2px;
+}
+
+form.inplaceeditor-form textarea
+{
+
+}
+
+form.inplaceeditor-form input[type="submit"]
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  10px;
+  font-weight  :  bold;
+  color        :  #222222;
+  
+  padding      :  2px;
+  margin       :  0px 1px 0px 3px;
+  cursor       :  pointer;
+}
+
+form.inplaceeditor-form a
+{
+
+}
+
+.commission input[type="text"]
+{
+  width  :  40px;
+}
+
+.finalAudit input[type="text"], .etdRequired input[type="text"], .posdd input[type="text"]
+{
+  width  :  80px;
+}
+
+.qaImages  input[type="text"]
+{
+  display        :  block;
+  width          :  160px;
+  margin-bottom  :  5px;
+}
+
+.block
+{
+  width       :  341px;
+  background  :  url('../images/block-bg.jpg') repeat-y;
+}
+
+.block .blockBottom
+{
+  background  :  url('../images/block-bottom-bg.jpg') left bottom no-repeat;
+}
+
+.block .blockTop
+{
+  background  :  url('../images/block-top-bg.jpg') left top no-repeat;
+  padding     :  5px 10px 10px 5px;
+  min-height  :  190px;
+}
+
+#Profile
+{
+  position  :  absolute;
+  top       :  0px;
+  left      :  591px;
+  width     :  341px;
+  z-index   :  100000;
+}
+
+.frmOutline
+{
+  border   :  solid 1px #444444;
+  padding  :  1px;  
+}
+
+.frmInlineEdit
+{
+  border      :  solid 1px #f1edcd;
+  padding     :  1px;  
+  background  :  #f9f7ec;
+  padding     :  10px;
+}
+
+#SearchBar
+{
+  background     :  #aba7a6;
+  padding        :  0px 0px 0px 8px;
+  height         :  40px;
+  margin-bottom  :  4px;
+}
+
+#SearchBar td
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  font-weight  :  bold;
+  color        :  #ffffff;
+  
+  line-height  :  40px;
+}
+
+#SubSearchBar
+{
+  background     :  #aba7a6;
+  padding        :  0px 0px 0px 8px;
+  height         :  30px;
+  margin-bottom  :  4px;
+}
+
+#SubSearchBar td
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  font-weight  :  bold;
+  color        :  #ffffff;
+  
+  line-height  :  30px;
+}
+
+#SubSearchBar td a
+{
+  color  :  #494949;
+}
+
+#SubSearchBar td a:hover
+{
+  color  :  #ffffff;
+}
+
+.tblSheet
+{
+  border    :  solid 1px #444444;
+  padding   :  1px 0px 0px 1px;
+  #padding  :  0px;
+  _padding  :  0px;
+}
+
+.tblSheet .headerRow
+{
+  background  :  #666666;
+}
+
+.tblSheet .headerRow td
+{
+  font-weight  :  bold;
+  color        :  #ffffff;
+
+  text-align   :  left;
+}
+
+.tblSheet .evenRow
+{
+  background  :  #f6f4f5;
+}
+
+.tblSheet .evenRow:hover
+{
+  background  :  #f1edcd;
+}
+
+.tblSheet .evenRow:hover td
+{
+  color  :  #000000;
+}
+
+.tblSheet .oddRow
+{
+  background  :  #dcdcdc;
+}
+
+.tblSheet .oddRow:hover
+{
+  background  :  #f1edcd;
+}
+
+.tblSheet .oddRow:hover td
+{
+  color  :  #000000;
+}
+
+.tblSheet .evenRow td, .tblSheet .oddRow td
+{
+  text-align  :  left;
+}
+
+.tblSheet .headerRow td.center, .tblSheet .evenRow td.center, .tblSheet .oddRow td.center, .tblSheet .footerRow td.center
+{
+  text-align  :  center;
+}
+
+.tblSheet .headerRow td.right, .tblSheet .evenRow td.right, .tblSheet .oddRow td.right, .tblSheet .footerRow td.right
+{
+  text-align  :  right;
+}
+
+.tblSheet .footerRow
+{
+  background  :  #999999;
+}
+
+.tblSheet .footerRow td
+{
+  font-weight  :  bold;
+  color        :  #ffffff;
+
+  text-align   :  left;
+}
+
+.tblSheet .headerRow a
+{
+  color  :  #ffffff;
+}
+
+.tblSheet .noRecord
+{
+  padding      :  25px;
+  background   :  #f3f3f3;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  30px;
+  color        :  #999999; 
+}
+
+.tblSheet a.sheetLink
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #000000;
+   
+  text-decoration  :  none;
+}
+  
+.tblSheet a.sheetLink:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #000000;
+   
+  text-decoration  :  underline;
+}
+
+.tblSheet a.whiteLink
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  11px;
+  color            :  #ffffff;
+   
+  text-decoration  :  none;
+}
+  
+.tblSheet a.whiteLink:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  11px;
+  color            :  #eeeeee;
+   
+  text-decoration  :  underline;
+}
+
+.tblSheet .error
+{
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #ad2d0b;
+}
+
+.tblSheet .ok
+{
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #0b6207;
+}
+
+.tblSheet .warning
+{
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #ff9600;
+}
+
+.poRowHeader
+{
+  background  :  #e6e6e6;
+}
+
+.poRowHeader td
+{
+  font-size    :  12px;
+  line-height  :  28px;
+  height       :  28px;
+}
+
+.poRowColor td
+{
+  line-height  :  28px;
+  height       :  28px;
+}
+
+.sdRowHeader
+{
+  background  :  #e6e6e6;
+}
+
+.sdRowHeader td
+{
+  font-size    :  12px;
+}
+
+.sdRowColor td
+{
+  background  :  #f6f6f6;
+}
+
+#SectionsTable tr:hover
+{
+    background  :  lightgray;
+}
+
+.poRowTotal
+{
+  position       :  relative;
+  background     :  #b6e500;  
+  padding        :  5px 10px 5px 5px;
+  border-top     :  solid 4px #ffffff;
+  border-bottom  :  solid 4px #ffffff;
+  
+  font-family    :  verdana, arial, sans-serif;
+  font-weight    :  bold;
+  font-size      :  13px;
+  color          :  #ffffff;
+  
+  text-align     :  right;
+}
+
+.poRowTotal div
+{
+  float       :  left;
+  padding     :  1px 0px 0px 3px;
+  background  :  #b6e500;  
+}
+
+.poRowTotal div a
+{
+  color  :  #444444;
+}
+
+.poRowTotal div a:hover
+{
+  color  :  #ff0000;
+}
+
+.poGrandTotal
+{
+  background   :  #b60000;  
+  padding      :  0px 10px 0px 0px;
+  margin       :  0px 4px 4px 4px;
+  height       :  30px;
+  line-height  :  30px;
+  position     :  relative;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #ffffff;
+  
+  text-align    :  right;
+}
+
+.poGrandTotal div
+{
+  position  :  absolute;
+  left      :  0px;
+  top       :  0px;
+  height    :  30px;
+}
+
+#PopupDiv
+{
+  margin  :  2px auto 2px auto;
+  width   :  679px;
+}
+
+#PopupDiv #PageContents
+{
+  padding  :  0px;
+}
+
+#PopupDiv h2
+{
+  margin  :  0px 0px 5px 0px;
+}
+
+#PopupDiv .poRowHeader td
+{
+  font-size    :  12px;
+  line-height  :  25px;
+  height       :  25px;
+}
+
+#PopupDiv .poRowColor td
+{
+  line-height  :  12px;
+  height       :  auto;
+  padding      :  5px;
+}
+
+#PopupDiv .sizesRow
+{
+  background  :  #eeeeee;
+}
+
+#PopupDiv .quantitiesRow
+{
+  background  :  #fafafa;
+}
+
+#PopupDiv .poGrandTotal
+{
+  margin  :  0px;
+}
+
+#PopupDiv .noRecord
+{
+  padding      :  40px;
+  background   :  #f6f6f6;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  24px;
+  color        :  #999999;  
+}
+
+.grayBar, .grayBar td, .grayBar div
+{
+  color       :  #ffffff;
+  background  :  #494949;
+}
+
+.grayBar a
+{
+  color            :  #ffffff;
+  text-decoration  :  underline;
+}
+
+.grayBar a:hover
+{
+  color            :  #A50716;
+  text-decoration  :  none;
+}
+
+.profileLinks
+{
+  text-align  :  right;
+  padding     :  10px 10px 5px 0px;
+}
+
+#ProfilePic
+{
+  position  :  relative;
+  width     :  162px;
+}
+
+#ProfilePic #Pic
+{
+  background  :  #ffffff;
+  border      :  solid 1px #bbbbbb;
+  padding     :  1px;
+}
+
+#ProfilePic #Pic img
+{
+  width   :  158px;
+  height  :  118px;
+}
+
+#ProfilePic #Link
+{
+  position     :  absolute;
+  left         :  2px;
+  top          :  90px;
+  width        :  158px;
+  height       :  22px;
+  line-height  :  22px;
+  background   :  #f3f3f3;
+  text-align   :  center;
+}
+
+#ProfilePic #Link a:hover
+{
+  text-decoration  :  none;
+}
+
+.orderQty
+{
+  background     :  #494949;  
+  padding        :  0px 10px 0px 5px;
+  margin         :  4px 0px 4px 0px;
+  height         :  30px;
+  line-height    :  30px;
+  position       :  relative;  
+  
+  font-family    :  verdana, arial, sans-serif;
+  font-weight    :  bold;
+  font-size      :  13px;
+  color          :  #ffffff;
+  
+  text-align     :  left;
+}
+
+.shipQty
+{
+  background   :  #b60000;  
+  padding      :  0px 10px 0px 5px;
+  height       :  30px;
+  line-height  :  30px;
+  position     :  relative;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #ffffff;
+  
+  text-align    :  left;
+}
+
+.qaButtons
+{
+  position       :  relative;
+  background     :  #494949;  
+  margin-bottom  :  1px; 
+  text-align     :  right;
+}
+
+.qaPic, .albumPic
+{
+  width    :  164px;
+  height   :  164px;
+  padding  :  0px 0px 5px 0px;
+}
+
+.qaPic div, .albumPic div
+{
+  border  :  solid 1px #888888;
+}
+
+.qaPic div img, .albumPic div img
+{
+  margin      :  1px;
+  width       :  160px;
+  height      :  160px;
+  background  :  #f3f3f3;
+}
+
+.qaPoPic
+{
+  width    :  120px;
+  height   :  120px;
+  padding  :  0px 0px 5px 0px;
+}
+
+.qaPoPic div
+{
+  border  :  solid 1px #888888;
+}
+
+.qaPoPic div img
+{
+  margin      :  1px;
+  width       :  116px;
+  height      :  116px;
+  background  :  #f3f3f3;
+}
+
+#Glider div.scroller, #VendorsGlider div.scroller, #BrandsGlider div.scroller
+{
+  width     :  737px;
+  overflow  :  hidden;
+}
+
+#QuondaGlider div.scroller
+{
+  width     :  780px;
+  overflow  :  hidden;
+}
+
+#Glider div.scroller div.content, #VendorsGlider div.scroller div.content, #BrandsGlider div.scroller div.content, #QuondaGlider div.scroller div.content
+{
+  width  : 100000px;
+}
+
+#Glider div.scroller div.section, #VendorsGlider div.scroller div.section, #BrandsGlider div.scroller div.section
+{
+  width     :  123px;
+  overflow  :  hidden;
+  float     :  left;
+  padding   :  0px;
+}
+
+#QuondaGlider div.scroller div.section
+{
+  width     :  120px;
+  float     :  left;
+  padding   :  5px;
+  overflow  :  hidden;  
+}
+
+.center
+{
+  text-align  :  center;
+}
+
+.right
+{
+  text-align  :  right;
+}
+
+.dateTime
+{
+  color  :  #888888;
+}
+
+.qsnSearch
+{
+  border-top  :  solid 8px #494949;
+  background  :  #aba7a6;
+}
+
+.qsnSearch b
+{
+  color  :  #ffffff;
+}
+
+.qaMiniPic
+{
+  width    :  80px;
+  height   :  80px;
+  padding  :  0px 0px 3px 0px;
+}
+
+.qaMiniPic div
+{
+  border  :  solid 1px #eeeeee;
+}
+
+.qaMiniPic div img
+{
+  margin      :  1px;
+  width       :  76px;
+  height      :  76px;
+  background  :  #f3f3f3;
+}
+
+.vsrChart
+{
+  position    :  relative;
+  background  :  url('../images/chart-bg.jpg') no-repeat;
+  width       :  306px;
+  min-height  :  250px;
+}
+
+.vsrChart .chart
+{
+  position    :  absolute;
+  left        :  5px;
+  top         :  5px;
+  width       :  296px;
+  height      :  201px;
+  overflow    :  hidden;
+  background  :  #ffffff;
+}
+
+.vsrChart .title
+{
+  position    :  absolute;
+  left        :  5px;
+  top         :  211px;
+  width       :  296px;
+  height      :  22px;
+  overflow    :  hidden;
+  background  :  #666666;
+}
+
+.vsrChart .title b
+{
+  display         :  block;
+  line-height     :  22px;
+  padding-left    :  5px;
+  
+  font-family     :  verdana, arial, sans-serif;
+  font-weight     :  bold;
+  font-size       :  12px;
+  color           :  #ffffff;
+  
+  text-transform  :  uppercase;
+}
+
+.vsrChart .handle
+{
+  position    :  absolute;
+  left        :  12px;
+  top         :  237px;
+  background  :  url('../images/chart-handle.jpg') no-repeat;
+  width       :  32px;
+  height      :  7px;
+  cursor      :  pointer;
+}
+
+.vsrChart .summary
+{
+  position    :  relative;
+  left        :  0px;
+  top         :  237px;
+  _top        :  0px;
+  #top        :  0px;
+  width       :  306px;
+  z-index     :  1000000;
+}
+
+.vsrChart .summary .text
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  10px;
+  color        :  #666666;
+
+  border       :  solid 1px #8095a6;
+  overflow     :  auto;
+  padding      :  7px 7px 11px 7px;
+  background   :  #f0f0f0 url('../images/chart-summary-bg.jpg') left bottom no-repeat;  
+}
+
+.vsrChart .summary .text td
+{
+  font-size  :  10px;
+}
+
+.vsrChart .summary .handle
+{
+  position    :  relative;
+  left        :  12px;
+  top         :  -5px;
+  width       :  32px;
+  height      :  10px;  
+  background  :  url('../images/chart-handle-selected.jpg') no-repeat;
+}
+
+#SlideShow
+{
+  width       :  581px;
+  height      :  471px;
+  background  :  #121212;
+}
+
+.fabricCategory
+{
+  width       :  180px;
+  height      :  160px;
+  background  :  url('../images/category-bg.jpg') no-repeat;
+  overflow    :  hidden;
+}
+
+.fabricCategory img
+{
+  margin  :  9px 11px 0px 9px;
+  cursor  :  pointer;
+}
+
+.fabricCategory b
+{
+  display       :  block;
+  height        :  24px;
+  line-height   :  24px;
+  padding-left  :  9px;
+  overflow      :  hidden;
+  
+  font-family   :  'Trebuchet MS', arial, verdana;
+  font-weight   :  normal;
+  font-size     :  13px;
+  color         :  #47292b;  
+}
+
+#Calendar
+{
+  padding  :  2px 0px 2px 0px;
+}
+
+#Calendar h1
+{
+  text-align  :  center;
+  margin      :  0px;
+}
+
+#Calendar h1 a
+{
+  font-size        :  15px;
+  color            :  #a8a6a7;
+  text-decoration  :  none;
+}
+
+#Calendar h1 a:hover
+{
+  font-size        :  15px;
+  color            :  #ffffff;
+  text-decoration  :  none;
+}
+
+#ListMode .entry
+{
+  margin   :  0px 1px 1px 0px;
+}
+
+#ListMode .entry h2
+{
+  margin-bottom  :  0px;
+}
+
+#GridMode
+{
+  padding   :  0px;
+  position  :  relative;
+}
+
+#GridMode .header td
+{
+  font-family     :  arial, verdana, sans-serif;
+  font-weight     :  bold;
+  font-size       :  19px;
+  color           :  #dddddd;
+  
+  text-align      :  center;
+  text-transform  :  uppercase;
+  
+  background      :  #888888;
+  height          :  36px;
+  line-height     :  36px;
+}
+
+#GridMode .empty
+{
+  background  :  #e6e6e6;
+}
+
+#GridMode div.day
+{
+  font-family     :  arial, verdana, sans-serif;
+  font-weight     :  bold;
+  font-size       :  36px;
+  color           :  #e6e6e6;
+  
+  text-align      :  right;
+  
+  background      :  #f6f6f6;
+  padding         :  8px 10px 30px 0px;
+}
+
+#GridMode div.entries
+{
+  color   :  #bbbbbb;
+  cursor  :  pointer;
+}
+
+
+#GridMode div.dayEvents
+{
+  position    :  absolute;
+  width       :  400px;
+  border      :  double 3px #333333;
+  background  :  #ffffff;
+  padding     :  1px;
+}
+
+#GridMode div.dayEvents h2
+{
+  margin-bottom  :  0px;
+}
+
+.mode
+{
+  margin-top  :  4px;
+  padding     :  1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+  .tblSheet
+  {
+    padding  :  0px;
+  }
+}
+
+
+ul.hr
+{
+  padding-left   :  15px;
+  margin-top     :  0px;
+  margin-bottom  :  0px;
+}
+
+ul.hr ul
+{
+  padding-left   :  35px;
+  margin-top     :  0px;
+  margin-bottom  :  0px;
+}
+
+ul.hr li u
+{
+  text-decoration  :  none;
+  border-bottom    :  dotted 1px #000000;
+}
+
+ul.auto-list{display:none;position:absolute;top:0px;left:0px;border:2px solid #aaaaaa;background:#eeeeee;padding:0;margin:0;list-style:none; z-index:100000000000;}
+ul.auto-list>li{border-top:dotted 1px #000000;cursor:default;padding:2px;}
+ul.auto-list>li:hover,ul.auto-list>li[data-selected=true]{background-color:#f7ef9b;}
+
+
+
+.multiSelect
+{
+  border                 :  solid 1px #888888;
+  padding                :  3px;
+  background             :  #f9f9f9;
+  
+  -moz-border-radius     :  3px;
+  border-radius          :  3px;
+  -webkit-border-radius  :  3px;    
+}
+
+.multiSelect:hover
+{
+  border      :  solid 1px #666666;
+  background  :  #ffffec;
+}
+
+.multiSelect label.title
+{
+  font-size              :  12px;
+  padding                :  4px;
+  background             :  #cccccc;
+  display                :  block;
+  
+  -moz-border-radius     :  3px 3px 0px 0px;
+  border-radius          :  3px 3px 0px 0px;
+  -webkit-border-radius  :  3px 3px 0px 0px;    
+}
+
+.multiSelect label.title span
+{
+  float  :  right;
+}
+
+.multiSelect div
+{
+  height    :  125px;
+  overflow  :  auto;
+}
+
+
+
+
+.styleDetails h1, .styleDetails h1 a, .styleDetails h1 a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  21px;
+  color            :  #ffffff;
+
+  text-decoration  :  none;
+  text-transform   :  none;
+  
+  height           :  40px;
+  line-height      :  40px;
+  padding          :  5px 0px 0px 10px;
+  margin           :  0px;
+  background       :  #a60800;
+  overflow         :  hidden;
+}
+
+.styleDetails h1.white
+{
+  color       :  #a60800;
+  background  :  #ffffff;
+}
+
+.styleDetails h1.orange
+{
+  color       :  #000000;
+  background  :  #ffb935;
+}
+
+.styleDetails h1.medium
+{
+  height       :  30px;
+  line-height  :  30px;
+  font-size    :  17px;
+}
+
+.styleDetails h1 a, .styleDetails h1 a:hover
+{
+  padding-left  :  0px;
+}
+
+.ucase
+{
+  text-transform  :  uppercase;
+}
+
+
+.styleDetails h2, .styleDetails h2 a, .styleDetails h2 a:hover
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #ffffff;
+  
+  height       :  30px;
+  line-height  :  30px;
+  padding      :  5px 0px 0px 10px;
+  margin       :  0px;
+  background   :  #a60800;
+  overflow     :  hidden;
+}
+
+.styleDetails h2.white
+{
+  color       :  #a60800;
+  background  :  #ffffff;
+}
+
+.styleDetails h2.green
+{
+  color       :  #ffffff;
+  background  :  #357517;
+}
+
+.styleDetails h2.black
+{
+  color  :  #000000;
+}
+
+.styleDetails h2 a, .styleDetails h2 a:hover
+{
+  padding-left  :  0px;
+}
+
+.styleDetails #Actions
+{
+  height  :  140px;
+}
+
+.styleDetails ul.audits
+{
+  list-style  :  none;
+  padding     :  0px;
+  margin      :  0px 0px 100px 0px;
+}
+
+.styleDetails ul.audits li
+{
+  padding        :  0px;
+  margin         :  0px;
+  border-bottom  :  solid 1px #ffffff;
+}
+
+.styleDetails ul.audits li a.approved
+{
+  background  :  #357517;
+}
+
+.styleDetails ul.audits li a.rejected
+{
+  background  :  #e80c00;
+}
+
+.styleDetails ul.audits li a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  13px;
+  color            :  #ffffff;
+
+  text-decoration  :  none;
+
+  display          :  block;  
+  padding          :  6px 10px 6px 10px;
+}
+
+.styleDetails ul.audits li span
+{
+  float  :  right;
+}
+
+.styleDetails ul.audits div
+{
+  padding  :  0px 0px 5px 10px;
+}
+
+.styleDetails ul.audits ul
+{
+  list-style  :  none;
+  padding     :  0px;
+  margin      :  0px;
+}
+
+.styleDetails ul.audits ul li
+{
+  float    :  left;
+  padding  :  0px;
+  margin   :  10px 10px 0px 0px;
+}
+
+
+
+.divDashboard .dashboardLink
+{
+  position  :  relative;
+  overflow  :  hidden;
+  width     :  300px;
+  height    :  150px;
+  margin    :  0px auto 0px auto;
+}
+
+.divDashboard .dashboardLink .image
+{
+  display  :  block;
+}
+
+.divDashboard .dashboardLink .title
+{
+  position    :  absolute;
+  left        :  0px;
+  right       :  0px;
+  bottom      :  15px;
+  display     :  block;
+  background  :  rgba(0, 0, 0, 0.8);
+  padding     :  10px;
+  text-align  :  left;
+  text-decoration  :  none;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size   :  13px;
+  color       :  #ffffff;
+}
+
+.divDashboard .link
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size   :  13px;
+  color       :  #333333;
+  
+  text-decoration  :  none;
+}
+
+.divDashboard select
+{
+  min-width  :  150px;
+}
+
+.divDashboard input.textbox
+{
+  min-width  :  138px;
+}
+
+@font-face {
+ font-family: 'Franklin Gothic Demi Cond';
+  src: url('../fonts/FranklinGothicDemiCondRegular.ttf');
+}
+
+@font-face {
+ font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+ font-family: 'Roboto Condensed Bold';
+  src: url('../fonts/RobotoCondensed-Bold.ttf');
+}
+
+.RobotoHeading
+{
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size: 36px;
+   font-weight: normal;
+}
+
+.bottom-left-cat 
+{
+    position: absolute;
+    background: gray;
+    width: 120px;
+    padding: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 8pt;
+    color: #ffffff;
+    bottom: 51px;
+    left: 10px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.bottom-left-title 
+{
+    position: absolute;
+    background: black;
+    height: 40px;
+    width: calc(100% - 5px);
+    padding: 2px;
+    color: #ffffff;
+    bottom: 10px;
+    font-size: 9pt;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.bottom-left-title span 
+{
+  margin: 5px;
+  position: absolute;
+}
+
+
+/********
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-o-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.blink
+{
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    -o-animation-name: blinker;
+    -o-animation-duration: 1s;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+    animation: blinker 1s infinite;
+}
+*************/

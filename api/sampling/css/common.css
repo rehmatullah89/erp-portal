@@ -1,0 +1,701 @@
+
+:focus
+{
+  -moz-outline-style  :  none;
+  outline             :  0;
+}
+
+*
+{
+  -webkit-touch-callout        :  none;
+  -webkit-tap-highlight-color  :  rgba(0,0,0,0);  
+}
+
+
+
+body
+{   
+  margin   :  0px;
+  padding  :  0px;
+}
+
+table
+{
+  border-collapse  :  collapse;
+  border-spacing   :  0;
+  table-layout     :  fixed;  
+
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #333333;
+}
+
+td, div, p
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #333333;
+  
+  outline      :  0;
+}
+
+h1, h1 a, h1 a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  21px;
+  color            :  #ffffff;
+
+  text-decoration  :  none;
+  
+  height           :  40px;
+  line-height      :  40px;
+  padding          :  5px 0px 0px 10px;
+  margin           :  0px;
+  background       :  #a60800;
+  overflow         :  hidden;
+}
+
+h1.white
+{
+  color       :  #a60800;
+  background  :  #ffffff;
+}
+
+h1.orange
+{
+  color       :  #000000;
+  background  :  #ffb935;
+}
+
+h1.medium
+{
+  height       :  30px;
+  line-height  :  30px;
+  font-size    :  17px;
+}
+
+h1 a, h1 a:hover
+{
+  padding-left  :  0px;
+}
+
+.ucase
+{
+  text-transform  :  uppercase;
+}
+
+
+h2, h2 a, h2 a:hover
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  13px;
+  color        :  #ffffff;
+  
+  height       :  30px;
+  line-height  :  30px;
+  padding      :  5px 0px 0px 10px;
+  margin       :  0px;
+  background   :  #a60800;
+  overflow     :  hidden;
+}
+
+h2.white
+{
+  color       :  #a60800;
+  background  :  #ffffff;
+}
+
+h2.green
+{
+  color       :  #ffffff;
+  background  :  #357517;
+}
+
+h2.black
+{
+  color  :  #000000;
+}
+
+h2 a, h2 a:hover
+{
+  padding-left  :  0px;
+}
+
+
+
+a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #0066cb;
+   
+  text-decoration  :  none;
+  outline          :  0;
+}
+  
+a:hover
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-size        :  11px;
+  color            :  #000000;
+   
+  text-decoration  :  underline;
+  outline          :  0;
+}
+
+a img
+{
+  border  :  none;
+}
+
+.hidden
+{
+  display  :  none;
+}
+
+
+
+#MainDiv
+{
+  width    :  100%;
+  height   :  100%;
+  margin   :  0px;
+  padding  :  0px;
+}
+
+#ProtoWare
+{
+  position     :  absolute;
+  z-index      :  1;
+  bottom       :  0px;
+  right        :  0px;
+  left         :  0px;
+  width        :  100%;
+  heigth       :  40px;
+  line-height  :  40px;
+  overflow     :  hidden;
+  background   :  #a60800;
+  padding      :  0px 5px 0px 5px;  
+}
+
+#ProtoWare div
+{
+  heigth       :  40px;
+  line-height  :  40px;
+  padding      :  0px 8px 0px 5px;
+  z-index      :  11111;
+  
+  font-family  :  arial, verdana, sans-serif;
+  font-weight  :  bold;
+  font-size    :  18px;
+  color        :  #ffffff;  
+  
+  text-align   :  right;
+}
+
+#ProtoWare a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  15px;
+  color            :  #ffffff;
+   
+  text-decoration  :  none;
+  outline          :  0;
+  float            :  left;
+}
+
+#ProtoWare #AddToBasket, #ProtoWare #RemoveFromBasket
+{
+  position    :  absolute;
+  left        :  8px;
+  top         :  4px;
+  z-index     :  111111111;
+  padding     :  0px;
+  background  :  #a60800;
+  width       :  200px;
+}
+
+#ProtoWare #ViewBasket, #ProtoWare #SendRequest
+{
+  position  :  absolute;
+  left      :  188px;
+  top       :  4px;
+  z-index   :  111111111;
+  padding   :  0px;
+  width     :  60px;
+}
+
+#ProtoWare #SendRequest
+{
+  top  :  6px;
+}
+
+#StyleInfo
+{
+  background   :  #797979;
+  padding      :  10px;
+  height       :  60px;
+  line-height  :  20px;
+  width        :  102%;
+  overflow     :  hidden;
+  
+  font-family  :  arial, verdana, sans-serif;
+  font-size    :  14px;
+  color        :  #ffffff;  
+}
+
+#StyleInfo b
+{
+  font-size  :  13px;
+  color      :  #000000;
+}
+
+
+#StylesListing
+{
+  position  :  absolute;
+  z-index   :  1;
+  top       :  165px;
+  bottom    :  48px;
+  right     :  0px;
+  left      :  -2px;
+  width     :  102%;
+  overflow  :  auto;
+}
+
+#StylesListing #Scroller
+{
+  position  :  absolute;
+  z-index   :  1;
+  width     :  100%;
+  padding   :  0px;
+  margin    :  0px;
+}
+
+#StylesListing ul
+{
+  margin      :  15px 4px 10px 4px;
+  padding     :  0px;
+  list-style  :  none;
+}
+
+#StylesListing ul li
+{
+  float       :  left;
+  margin      :  0px 6px 20px 3px;
+  padding     :  0px;
+  width       :  108px;
+  position    :  relative;
+  
+  text-align  :  center;
+}
+
+#StylesListing ul li img
+{
+  width                  :  90px;
+  height                 :  110px;
+  border                 :  solid 4px #939393;
+  padding                :  1px;
+  margin                 :  0px 0px 2px 0px;
+  
+  -moz-border-radius     :  5px;
+  border-radius          :  5px;
+  -webkit-border-radius  :  5px;    
+}
+
+#StylesListing ul li label
+{
+  display                :  block;
+  line-height            :  20px;
+  height                 :  20px;
+  margin-bottom          :  4px;
+  padding                :  3px;
+  background             :  #dddddd;
+  -moz-border-radius     :  4px;
+  border-radius          :  4px;
+  -webkit-border-radius  :  4px;    
+}
+
+#StylesListing ul li label span
+{
+  font-size    :  12px;
+  text-align   :  left;  
+  padding-top  :  3px;
+}
+
+#StylesListing ul li label input
+{
+  float               :  left;
+  margin-right        :  5px;
+  background          :  #fafafa;
+  border              :  solid 1px #cacece;
+  -webkit-appearance  :  none;
+  box-shadow          :  0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding             :  6px;
+  border-radius       :  3px;
+  display             :  inline-block;
+  position            :  relative;  
+}
+
+#StylesListing ul li label input:active, #StylesListing ul li label input:checked:active
+{
+  box-shadow  :  0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+ 
+#StylesListing ul li label input:checked
+{
+  background  :  #e9ecee;
+  border      :  1px solid #adb8c0;
+  box-shadow  :  0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+  color       :  #99a1a7;
+}
+
+#StylesListing ul li label input:checked:after
+{
+    content    :  '\2714';
+    font-size  :  11px;
+    position   :  absolute;
+    top        :  0px;
+    left       :  0px;
+    color      :  #555555;
+}
+
+#StylesListing ul li b
+{
+  display      :  block;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  12px;
+  color        :  #000000;
+  
+  text-align   :  center;
+}
+
+#StylesListing ul li span
+{
+  display      :  block;
+  height       :  25px;
+  line-height  :  12px;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  11px;
+  color        :  #000000;
+  
+  text-align   :  center;
+}
+
+#StylesListing ul li div.bubble
+{
+  position     :  absolute;
+  top          :  -17px;
+  right        :  -15px;
+  width        :  60px;
+  height       :  48px;
+  line-height  :  38px;
+  background   :  url('../images/bubble.png') no-repeat;
+  
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  14px;
+  color        :  #000000;
+  
+  text-align   :  center;
+}
+
+
+.dropdown
+{
+  position  :  relative;
+  display   :  block;
+}
+
+.dropdown-button, .dropdown-button:hover
+{
+  margin           :  0px;
+  cursor           :  pointer;
+  display          :  block;
+  background       :  #ffffff url('../images/dropdown.png') 130px 5px no-repeat;
+  height           :  40px;
+  line-height      :  40px;
+  padding          :  5px 0px 0px 10px;
+  overflow         :  hidden;
+  
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  14px;
+  color            :  #a60800;
+
+  text-decoration  :  none;
+}
+
+
+.dropdown-panel
+{
+  position    :  absolute;
+  display     :  none;
+  width       :  100%;
+  overflow    :  auto;
+  z-index     :  1000000000;
+  max-height  :  300px;
+  border      :  2px solid #cccccc;
+  background  :  #ffffff;
+}
+
+.dropdown-panel ul
+{
+  margin      :  0px;
+  padding     :  0px;
+  list-style  :  none;
+}
+
+.dropdown-panel li
+{
+  margin         :  0px;
+  padding        :  0px;
+  border-bottom  :  solid 2px #cccccc;
+}
+
+.dropdown-panel a
+{
+  cursor           :  pointer;
+  display          :  block;
+  height           :  26px;
+  line-height      :  26px;
+  background       :  #f2f2f2;
+  padding          :  0px 10px;
+  margin           :  0px;
+  overflow         :  hidden;
+
+  font-family      : verdana, arial, sans-serif;
+  font-size        : 13px;
+  color            : #000000;
+
+  text-decoration  :  none;
+}
+
+
+
+
+#StylesDetails, #Graph
+{
+  position  :  absolute;
+  z-index   :  1;
+  top       :  150px;
+  bottom    :  168px;
+  right     :  0px;
+  left      :  0px;
+  width     :  102%;
+  overflow  :  auto;
+}
+
+#Graph
+{
+  top     :  45px;
+  bottom  :  42px;
+}
+
+#StylesDetails #Scroller, #Graph #Scroller
+{
+  position  :  absolute;
+  z-index   :  1;
+  width     :  100%;
+  padding   :  0px;
+  margin    :  0px;
+}
+
+#StylesDetails img
+{
+  cursor  :  pointer;
+}
+
+#StyleSketch
+{
+  overflow  :  hidden;
+  width     :  100%;
+  height    :  335px;
+}
+
+
+
+.popup
+{
+  position  :  absolute;
+  z-index   :  100;
+  top       :  150px;
+  bottom    :  120px;
+  right     :  5px;
+  left      :  10px;
+  display   :  none;
+}
+
+.popup.show
+{
+  background  :  url('../images/pointer.png') 78% 100% no-repeat;
+}
+
+.popup.add
+{
+  top         :  220px;
+  background  :  url('../images/pointer.png') 98% 100% no-repeat;
+}
+
+.popup.specs
+{
+  background  :  url('../images/pointer.png') 58% 100% no-repeat;
+}
+
+
+#ShowComments, #AddComments, #MeasurementSpecs
+{
+  position               :  absolute;
+  z-index                :  111;
+  top                    :  0px;
+  bottom                 :  20px;
+  right                  :  0px;
+  left                   :  0px;
+  background             :  #ffffff;
+  border                 :  solid 6px #666666;
+  padding                :  2px;
+  overflow               :  auto;  
+  
+  -moz-border-radius     :  8px;
+  border-radius          :  8px;
+  -webkit-border-radius  :  8px;
+}
+
+#ShowComments #Scroller, #MeasurementSpecs #Scroller
+{
+  position  :  absolute;
+  z-index   :  111;
+  width     :  97%;
+  padding   :  0px;
+  margin    :  0px;
+}
+
+#ShowComments b
+{
+  font-size  :  13px;
+}
+
+
+
+#Audits
+{
+  position  :  absolute;
+  z-index   :  1;
+  top       :  141px;
+  bottom    :  165px;
+  right     :  0px;
+  left      :  0px;
+  width     :  102%;
+  overflow  :  auto;
+}
+
+#Audits #Scroller
+{
+  position  :  absolute;
+  z-index   :  1;
+  width     :  100%;
+  padding   :  0px;
+  margin    :  0px;
+}
+
+ul.audits
+{
+  list-style  :  none;
+  padding     :  0px;
+  margin      :  0px;
+}
+
+ul.audits li
+{
+  padding        :  0px;
+  margin         :  0px;
+  border-bottom  :  solid 1px #ffffff;
+}
+
+ul.audits li a.approved
+{
+  background  :  #357517;
+}
+
+ul.audits li a.rejected
+{
+  background  :  #e80c00;
+}
+
+ul.audits li a
+{
+  font-family      :  verdana, arial, sans-serif;
+  font-weight      :  bold;
+  font-size        :  13px;
+  color            :  #ffffff;
+
+  text-decoration  :  none;
+
+  display          :  block;  
+  padding          :  6px 10px 6px 10px;
+}
+
+ul.audits li span
+{
+  float  :  right;
+}
+
+ul.audits div
+{
+  padding  :  0px 0px 5px 10px;
+}
+
+ul.audits ul
+{
+  list-style  :  none;
+  padding     :  0px;
+  margin      :  0px;
+}
+
+ul.audits ul li
+{
+  float    :  left;
+  padding  :  0px;
+  margin   :  10px 10px 0px 0px;
+}
+
+
+
+#Actions
+{
+  position  :  absolute;
+  z-index   :  2;
+  bottom    :  42px;
+  right     :  0px;
+  left      :  0px;
+  width     :  102%;
+  height    :  120px;
+}
+
+.popup.picture
+{
+  top     :  10px;
+  bottom  :  10px;
+}
+
+.popup.picture #Picture
+{
+  position               :  absolute;
+  z-index                :  111;
+  top                    :  0px;
+  bottom                 :  0px;
+  right                  :  0px;
+  left                   :  0px;
+  background             :  #ffffff;
+  border                 :  solid 6px #666666;
+  padding                :  2px;
+  overflow               :  auto;  
+  
+  -moz-border-radius     :  8px;
+  border-radius          :  8px;
+  -webkit-border-radius  :  8px;
+}

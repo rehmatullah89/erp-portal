@@ -1,0 +1,78 @@
+[13-Mar-2019 12:23:01 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:02 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:04 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:06 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:09 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:11 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:15 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[13-Mar-2019 12:23:18 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:25 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:26 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:26 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:26 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:27 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:27 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:28 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 13:38:28 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:44 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:44 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:45 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:45 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:45 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:45 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:46 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 19:29:46 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:28 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:29 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[15-Mar-2019 20:00:30 UTC] PHP Warning:  Maximum number of allowable file uploads has been exceeded in Unknown on line 0
+[25-Mar-2019 16:03:22 Asia/Karachi] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Cannot open ../templates/jcrew-new.pdf !' in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php:183
+Stack trace:
+#0 /home/isaeed/public_html/portal/requires/fpdi2/fpdi_pdf_parser.php(64): pdf_parser->__construct('../templates/jc...')
+#1 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(123): fpdi_pdf_parser->__construct('../templates/jc...')
+#2 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(101): FPDI->_getPdfParser('../templates/jc...')
+#3 /home/isaeed/public_html/portal/includes/quonda/export-jcrew-report-new.php(282): FPDI->setSourceFile('../templates/jc...')
+#4 /home/isaeed/public_html/portal/quonda/export-qa-report.php(150): include('/home/isaeed/pu...')
+#5 {main}
+  thrown in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php on line 183
+[26-Mar-2019 12:21:41 Asia/Karachi] PHP Fatal error:  Uncaught exception 'Exception' with message 'This document (/home/isaeed/public_html/portal/templates/jcrew-new.pdf) probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)' in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php:322
+Stack trace:
+#0 /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php(195): pdf_parser->_readXref(Array, 1219219)
+#1 /home/isaeed/public_html/portal/requires/fpdi2/fpdi_pdf_parser.php(64): pdf_parser->__construct('/home/isaeed/pu...')
+#2 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(123): fpdi_pdf_parser->__construct('/home/isaeed/pu...')
+#3 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(101): FPDI->_getPdfParser('/home/isaeed/pu...')
+#4 /home/isaeed/public_html/portal/includes/quonda/export-jcrew-report-new.php(282): FPDI->setSourceFile('../templates/jc...')
+#5 /home/isaeed/public_html/portal/quonda/export-qa-report.php(150): include('/ho in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php on line 322
+[26-Mar-2019 12:26:21 Asia/Karachi] PHP Fatal error:  Uncaught exception 'Exception' with message 'This document (/home/isaeed/public_html/portal/templates/jcrew-new.pdf) probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)' in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php:322
+Stack trace:
+#0 /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php(195): pdf_parser->_readXref(Array, 1218738)
+#1 /home/isaeed/public_html/portal/requires/fpdi2/fpdi_pdf_parser.php(64): pdf_parser->__construct('/home/isaeed/pu...')
+#2 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(123): fpdi_pdf_parser->__construct('/home/isaeed/pu...')
+#3 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(101): FPDI->_getPdfParser('/home/isaeed/pu...')
+#4 /home/isaeed/public_html/portal/includes/quonda/export-jcrew-report-new.php(282): FPDI->setSourceFile('../templates/jc...')
+#5 /home/isaeed/public_html/portal/quonda/export-qa-report.php(150): include('/ho in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php on line 322
+[26-Mar-2019 12:27:33 Asia/Karachi] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unable to find "startxref" keyword.' in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php:287
+Stack trace:
+#0 /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php(195): pdf_parser->_findXref()
+#1 /home/isaeed/public_html/portal/requires/fpdi2/fpdi_pdf_parser.php(64): pdf_parser->__construct('/home/isaeed/pu...')
+#2 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(123): fpdi_pdf_parser->__construct('/home/isaeed/pu...')
+#3 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(101): FPDI->_getPdfParser('/home/isaeed/pu...')
+#4 /home/isaeed/public_html/portal/includes/quonda/export-jcrew-report-new.php(282): FPDI->setSourceFile('../templates/jc...')
+#5 /home/isaeed/public_html/portal/quonda/export-qa-report.php(150): include('/home/isaeed/pu...')
+#6 {main}
+  thrown in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php on line 287
+[26-Mar-2019 12:29:43 Asia/Karachi] PHP Fatal error:  Uncaught exception 'Exception' with message 'This document (/home/isaeed/public_html/portal/templates/jcrew-new.pdf) probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details)' in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php:322
+Stack trace:
+#0 /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php(195): pdf_parser->_readXref(Array, 116)
+#1 /home/isaeed/public_html/portal/requires/fpdi2/fpdi_pdf_parser.php(64): pdf_parser->__construct('/home/isaeed/pu...')
+#2 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(123): fpdi_pdf_parser->__construct('/home/isaeed/pu...')
+#3 /home/isaeed/public_html/portal/requires/fpdi2/fpdi.php(101): FPDI->_getPdfParser('/home/isaeed/pu...')
+#4 /home/isaeed/public_html/portal/includes/quonda/export-jcrew-report-new.php(282): FPDI->setSourceFile('../templates/jc...')
+#5 /home/isaeed/public_html/portal/quonda/export-qa-report.php(150): include('/home/i in /home/isaeed/public_html/portal/requires/fpdi2/pdf_parser.php on line 322
+[29-Mar-2019 06:09:36 UTC] PHP Warning:  Unterminated comment starting line 350 in /home/isaeed/public_html/portal/quonda/qa-reports.php on line 350
+[03-Apr-2019 09:25:57 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0
+[18-Apr-2019 07:32:15 UTC] PHP Deprecated:  Automatically populating $HTTP_RAW_POST_DATA is deprecated and will be removed in a future version. To avoid this warning set 'always_populate_raw_post_data' to '-1' in php.ini and use the php://input stream instead. in Unknown on line 0

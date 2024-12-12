@@ -1,0 +1,31 @@
+
+Hello!<br />
+
+<p>A reply has been posted against your message on Portal in HR section. The message details are as follows:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="110">Name</td>
+    <td>[Name]</td>
+  </tr>
+  
+  <tr>
+    <td>Email Address</td>
+    <td>[Email]</td>
+  </tr>
+   
+  <tr>
+    <td>Subject</td>
+    <td>[Subject]</td>
+  </tr>
+  
+  <tr valign="top">
+    <td>Message</td>
+    <td>[Message]</td>
+  </tr>  
+</table>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

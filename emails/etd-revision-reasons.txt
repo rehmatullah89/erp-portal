@@ -1,0 +1,11 @@
+
+Hello [Name]!<br /><br />
+
+<p>The ETD Revision Reasons List is attached..</p>
+
+<br />
+Regards<br />
+[SenderName]<br />
+<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

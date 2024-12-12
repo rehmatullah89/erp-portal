@@ -1,0 +1,9 @@
+
+Hello [Name]!<br /><br />
+
+<p>The ETD Revision request of PO # [OrderNo] from [EtdRequired] to [RevisedEtd] has been [Status].</p>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

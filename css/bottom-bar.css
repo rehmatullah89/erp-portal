@@ -1,0 +1,408 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+#TabsBar
+{
+  position      :  fixed;
+  z-index       :  1000000;
+  left          :  10px;
+  bottom        :  -1px;
+  width         :  98.4%;  
+  background    :  #e5e5e5;
+  border-top    :  solid 1px #b5b5b5;
+  border-left   :  solid 1px #b5b5b5;
+  border-right  :  solid 1px #b5b5b5;
+  heiight       :  28px;
+
+  _width        :  97.2%;
+  _position     :  absolute;
+}
+
+#TabsBar #TabsArea
+{
+  border-top  :  solid 1px #fbfbfb;
+}
+
+#TabsBar ul
+{
+  margin      :  0px 1px 0px 1px;
+  padding     :  0px;
+  list-style  :  none;
+}
+
+#TabsBar ul li
+{
+  padding        :  0px 15px 0px 28px;
+  min-width      :  90px;
+  _width         :  110px;
+  float          :  right;
+  height         :  25px;
+  line-height    :  25px;
+  background     :  #cccccc;
+  border-left    :  solid 1px #b5b5b5;
+  border-top     :  solid 1px #cccccc;
+  border-right   :  solid 1px #cccccc;
+  border-bottom  :  solid 1px #cccccc;
+  cursor         :  pointer;
+  position       :  relative;
+}
+
+#TabsBar ul li.selected, #TabsBar ul li:hover
+{
+  background  :  #ffffff;
+  border      :  solid 1px #bbbbbb;
+}
+
+#TabsBar ul li img
+{
+  position  :  absolute;
+  left      :  6px;
+  top       :  5px;
+  width     :  16px;
+  height    :  16px;
+}
+
+#TabsBar #Notifications
+{
+  clear       :  both;
+  position    :  relative;
+  float       :  right;
+  background  :  #ffffff;
+  border      :  solid 1px #bbbbbb;
+  width       :  250px;  
+  left        :  0px;
+  top         :  -340px;
+  height      :  310px;
+  overflow    :  hidden;
+  z-index     :  1000000;
+}
+
+#TabsBar #Notifications h2
+{
+  _position      :  relative;
+  _width         :  240px;
+  margin-bottom  :  0px;
+}
+
+#TabsBar #Notifications h2 img
+{
+  float   :  right;
+  margin  :  1px 6px 0px 0px;
+  cursor  :  pointer;
+}
+
+#TabsBar #Notifications #NotificationsContents
+{
+  position  :  relative;
+  overflow  :  hidden;
+  width     :  250px;
+  height    :  284px;
+}
+
+#TabsBar #Notifications #NotificationsArea
+{
+  position  :  relative;
+  overflow  :  auto;
+  padding   :  5px;
+  width     :  240px;
+  height    :  274px;
+}
+
+#TabsBar #Notifications #NotificationsArea .evenNotification
+{
+  background     :  #eeeff4;
+  padding        :  1px;
+  border         :  solid 1px #d7dfea;
+  margin-bottom  :  3px;
+  overflow       :  hidden;
+}
+
+#TabsBar #Notifications #NotificationsArea .oddNotification
+{
+  background     :  #faf8ef;
+  padding        :  1px;
+  border         :  solid 1px #e8dca6;
+  margin-bottom  :  3px;
+  overflow       :  hidden;
+}
+
+#TabsBar #Notifications #NotificationsArea b
+{
+  display        :  block;
+  padding-left   :  5px;
+  line-height    :  22px;
+  height         :  22px;
+  border-bottom  :  solid 1px #ffffff;
+}
+
+#TabsBar #Notifications #NotificationsArea .evenNotification b
+{
+  background  :  #d7dfea;
+}
+
+#TabsBar #Notifications #NotificationsArea .oddNotification b
+{
+  background  :  #e8dca6;
+}
+
+#TabsBar #Notifications #NotificationsArea .evenNotification div, #TabsBar #Notifications #NotificationsArea .oddNotification div
+{
+  padding      :  5px;
+  line-height  :  13px;
+  font-size    :  9px;
+}
+
+#TabsBar #Notifications #NotificationsArea .evenNotification div i, #TabsBar #Notifications #NotificationsArea .oddNotification div i
+{
+  display         :  block;
+  font-size       :  9px;
+  color           :  #999999;
+  padding-bottom  :  6px;
+}
+
+#TabsBar #Chat
+{
+  clear       :  both;
+  position    :  relative;
+  float       :  right;
+  background  :  #ffffff;
+  border      :  solid 1px #bbbbbb;
+  width       :  250px;  
+  left        :  -137px;
+  top         :  -340px;
+  height      :  310px;
+  z-index     :  1000000;
+  overflow    :  hidden;
+}
+
+#TabsBar #Chat h2
+{
+  _position      :  relative;
+  _width         :  240px;
+  margin-bottom  :  0px;
+}
+
+#TabsBar #Chat h2 img
+{
+  float   :  right;
+  margin  :  1px 6px 0px 0px;
+  cursor  :  pointer;
+}
+
+#TabsBar #Chat #ChatContents
+{
+  position  :  relative;
+  overflow  :  hidden;
+  width     :  250px;
+  height    :  294px;
+}
+
+#TabsBar #Chat #ChatArea
+{
+  padding   :  5px;
+  position  :  relative;
+  overflow  :  auto;  
+  height    :  273px;
+}
+
+#TabsBar #Chat #ChatArea b
+{
+  display        :  block;
+  padding-left   :  20px;
+  line-height    :  24px;
+  border-top     :  solid 1px #ffffff;
+  border-bottom  :  solid 1px #ffffff;
+}
+
+#TabsBar #Chat #ChatArea b.open
+{
+  background  :  #eeeeee url('../images/icons/group-open.png') 3px 9px no-repeat;
+}
+
+#TabsBar #Chat #ChatArea b.close
+{
+  background  :  #eeeeee url('../images/icons/group-close.png') 6px 9px no-repeat;
+}
+
+#TabsBar #Chat #ChatArea ul
+{
+  margin      :  0px 1px 0px 1px;
+  padding     :  0px;
+  list-style  :  none;
+}
+
+#TabsBar #Chat #ChatArea li
+{
+  padding        :  0px 0px 0px 32px;
+  min-width      :  auto;
+  _width         :  auto;
+  float          :  none;
+  height         :  20px;
+  line-height    :  20px;
+  background     :  none;
+  border         :  none;
+  position       :  relative;
+  background     :  #fafafa;
+  border-bottom  :  solid 1px #ffffff;
+  overflow       :  hidden;
+}
+
+#TabsBar #Chat #ChatArea li img
+{
+  position  :  absolute;
+  left      :  17px;
+  top       :  5px;
+  width     :  10px;
+  height    :  10px;
+}
+
+#TabsBar .chatWin
+{
+  clear       :  left;
+  position    :  relative;
+  float       :  right;
+  background  :  #ffffff;
+  border      :  solid 1px #bbbbbb;
+  width       :  300px;  
+  left        :  -137px;
+  top         :  -340px;
+  height      :  310px;
+  overflow    :  hidden;
+  z-index     :  1100000;
+}
+
+#TabsBar .chatWin .chatWinTitle
+{
+  position       :  relative;
+  background     :  #eeeeee;
+  height         :  65px;
+  border-bottom  :  solid 1px #dddddd;
+}
+
+#TabsBar .chatWin .chatWinTitle b
+{
+  color    :  #ffffff;
+  display  :  block;
+  padding  :  6px 0px 6px 0px;
+}
+
+#TabsBar .chatWin .chatWinTitle i
+{
+  color    :  #000000;
+  display  :  block;
+  padding  :  4px 0px 0px 0px;
+}
+
+#TabsBar .chatWin .chatWinTitle span
+{
+  color    :  #999999;
+  display  :  block;
+  padding  :  4px 0px 0px 0px;
+}
+
+#TabsBar .chatWin .chatWinTitle .userPic
+{
+  position  :  absolute;
+  left      :  5px;
+  top       :  6px;
+}
+
+#TabsBar .chatWin .chatWinTitle .userPic img
+{
+  width   :  70px;
+  height  :  52px;
+  border  :  solid 1px #ffffff;
+}
+
+#TabsBar .chatWin #ChatWinContents
+{
+  position  :  relative;
+  overflow  :  hidden;
+  width     :  300px;
+  height    :  284px;
+  z-index   :  1200000;
+}
+
+#TabsBar .chatWin .chatWinArea
+{
+  padding     :  3px;
+  position    :  relative;
+  overflow    :  auto;  
+  height      :  214px;
+  background  :  #f6f6f6;
+  z-index     :  1300000;
+}
+
+#TabsBar .chatWin .chatWinArea .chatMe
+{
+  background     :  #eeeff4;
+  padding        :  1px;
+  border         :  solid 1px #d7dfea;
+  margin-bottom  :  3px;
+  overflow       :  hidden;
+}
+
+#TabsBar .chatWin .chatWinArea .chatOther
+{
+  background     :  #faf8ef;
+  padding        :  1px;
+  border         :  solid 1px #e8dca6;
+  margin-bottom  :  3px;
+  overflow       :  hidden;
+}
+
+#TabsBar .chatWin .chatWinArea .chatMe span, #TabsBar .chatWin .chatWinArea .chatOther span
+{
+  color  :  #aaaaaa;
+}
+
+#TabsBar .chatWin #ChatWinContents form
+{
+  border-top   :  solid 2px #bbbbbb;
+  background   :  #aaaaaa;
+  position     :  relative;
+  background   :  url('../images/icons/chat-msg.gif') 4px 4px no-repeat;
+  overflow     :  hidden;
+  height       :  23px;
+  line-height  :  23px;
+  z-index      :  1500000;
+}
+
+#TabsBar .chatWin #ChatWinContents form input.textbox
+{
+  margin      :  2px 0px 0px 23px;
+  font-size   :  11px;
+  width       :  268px;
+  background  :  #ffffff;
+  border      :  solid 1px #ffffff;
+}
+
+#TabsBar .chatWin #ChatWinContents form input.button
+{
+  display  :  none;
+}

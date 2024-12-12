@@ -1,0 +1,12 @@
+
+Hello [Name]!<br /><br />
+
+<p>The Specs of the Style # [Style] has been revised/updated on the Portal as follows:</p>
+<br />
+
+[StyleSpecs]
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

@@ -1,0 +1,53 @@
+<?
+	/*********************************************************************************************\
+	***********************************************************************************************
+	**                                                                                           **
+	**  Triple Tree Customer Portal                                                              **
+	**  Version 2.0                                                                              **
+	**                                                                                           **
+	**  http://portal.3-tree.com                                                                 **
+	**                                                                                           **
+	**  Copyright 2008-15 (C) Triple Tree                                                        **
+	**                                                                                           **
+	**  ***************************************************************************************  **
+	**                                                                                           **
+	**  Project Manager:                                                                         **
+	**                                                                                           **
+	**      Name  :  Muhammad Tahir Shahzad                                                      **
+	**      Email :  mtahirshahzad@hotmail.com                                                   **
+	**      Phone :  +92 333 456 0482                                                            **
+	**      URL   :  http://www.mtshahzad.com                                                    **
+	**                                                                                           **
+	**  ***************************************************************************************  **
+	**                                                                                           **
+	**                                                                                           **
+	**                                                                                           **
+	**                                                                                           **
+	***********************************************************************************************
+	\*********************************************************************************************/
+
+	@require_once("../requires/session.php");
+
+	if ($sUserRights['Add'] != "Y")
+		redirect(SITE_URL, "ACCESS_DENIED");
+
+	$objDbGlobal = new Database( );
+	$objDb       = new Database( );
+
+	$Id = IO::intValue("Id");
+
+	$sSQL = ("INSERT INTO tbl_gf_specs (style_id, created, created_by, modified, modified_by)
+						        VALUES ('$Id', NOW( ), '{$_SESSION['UserId']}', NOW( ), '{$_SESSION['UserId']}')");
+
+	if ($objDb->execute($sSQL) == true)
+		redirect("edit-specs.php?Id={$Id}&Referer={$_SERVER['HTTP_REFERER']}", "GF_SPECS_ADDED");
+
+	else
+		redirect($_SERVER['HTTP_REFERER'], "DB_ERROR");
+
+
+	$objDb->close( );
+	$objDbGlobal->close( );
+
+	@ob_end_flush( );
+?>

@@ -1,0 +1,23 @@
+
+Hello [Name]!<br /><br />
+
+<p>Following POs Final Audit is due within next 2 days, please specify the Audit Schedule of the below POs on the Portal using the link below:</p>
+
+<table border="1" cellpadding="5" cellspacing="1" width="100%">
+  <tr bgcolor="#eeeeee">
+    <td width="6%" align="center"><b>#</b></td>
+    <td width="20%"><b>PO</b></td>
+    <td width="17%"><b>Style</b></td>
+    <td width="17%"><b>ETD Required</b></td>
+    <td width="20%"><b>Vendor</b></td>
+    <td width="20%"><b>Brand</b></td>
+  </tr>
+[POs]
+</table>
+
+<p><a href="[Link]">[Link]</a></p>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

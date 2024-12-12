@@ -1,0 +1,13 @@
+
+Hello!<br /><br />
+
+We have received the ETD Revision requests of the following POs.<br />
+[POs]
+<br />
+<p>Please goto the following link to accept or reject the above etd revision requests:</p>
+<p><a href="[Link]">[Link]</a></p>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

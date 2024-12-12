@@ -1,0 +1,31 @@
+
+Hello!<br /><br />
+
+<p>You have received a message from the Triple Tree Customer Portal. The message details are as follows:</p>
+
+<table border="0" cellspacing="0" cellpadding="0" width="500">
+  <tr>
+    <td width="100">Name</td>
+    <td>[Name]</td>
+  </tr>
+  
+  <tr>
+    <td>Email Address</td>
+    <td>[Email]</td>
+  </tr>
+   
+  <tr>
+    <td>Subject</td>
+    <td>[Subject]</td>
+  </tr>
+  
+  <tr valign="top">
+    <td>Message</td>
+    <td>[Message]</td>
+  </tr>  
+</table>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

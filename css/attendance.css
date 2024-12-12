@@ -1,0 +1,164 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+html
+{
+
+}
+
+body
+{   
+  width       :  100%;
+  background  :  #292929 url('../images/attendance/page-bg.jpg') center top no-repeat;
+}
+
+#MainDiv
+{
+  width     :  1600px;
+  margin    :  0px auto 0px auto;
+  position  :  relative;
+}
+
+#DateTime
+{
+  position     :  absolute;
+  left         :  500px;
+  top          :  400px;
+  width        :  600px;
+
+  font-family  :  verdana, arial, sans-serif;
+  font-weight  :  bold;
+  font-size    :  18px;
+  color        :  #ffffff;
+
+  text-align   :  center;
+}
+
+.green
+{
+  color  :  #b6e500;
+}
+
+
+
+#frmAttendance
+{
+  position  :  absolute;
+  left      :  640px;
+  top       :  550px;
+}
+
+#frmAttendance input
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  42px;
+  color        :  #313131;
+  
+  text-align   :  center;
+  
+  padding      :  10px;
+  width        :  300px;
+  background   :  #353535;
+  border       :  solid 1px #292929;
+}
+
+
+
+#Welcome, #Message
+{
+  position  :  absolute;
+  left      :  350px;
+  top       :  550px;
+  width     :  900px;
+}
+
+#Welcome td, #Message td, #Message td span
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  19px;
+  color        :  #ffffff;
+}
+
+input.button
+{
+  font-family     :  verdana, arial, sans-serif;
+  font-size       :  18px;
+  font-weight     :  bold;
+  color           :  #ffffff;
+  
+  text-align      :  center;
+  text-transform  :  uppercase;
+  
+  padding         :  8px;
+  margin          :  0px 5px 0px 5px;
+  width           :  150px;
+  cursor          :  pointer;
+  background      :  #393939;
+}
+
+input.button:hover
+{
+  background  :  #595959;
+}
+
+select
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  21px;
+  color        :  #ffffff;
+  
+  padding      :  4px;
+  background   :  #393939;
+}
+
+#Alphabets
+{
+  position  :  fixed;
+  left      :  0px;
+  right     :  0px;
+  bottom    :  0px;
+  width     :  100%;
+  z-index   :  1111111;
+}
+
+#Alphabets td
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  36px;
+  color        :  #666666;
+  
+  text-align   :  center;
+  
+  background   :  #333333;
+}
+
+#Alphabets td:focus, #Alphabets td:hover
+{
+  color       :  #dddddd;
+  background  :  #444444;
+}

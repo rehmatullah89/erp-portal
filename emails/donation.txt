@@ -1,0 +1,9 @@
+
+Hi [Name],<br /><br />
+
+<p>Thankyou for donating into MATRIX Sourcing Flood Relief Fund. Your donation of Rs. [Amount] will be deducted from your next month salary</p>
+
+<br />
+Regards<br />
+[SiteTitle]<br />
+[SiteUrl]<br />

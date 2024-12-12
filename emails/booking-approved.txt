@@ -1,0 +1,143 @@
+<p class=MsoPlainText></p>
+<p class=MsoPlainText>
+  <span style='font-size:9.0pt;color:#7F7F7F;mso-style-textfill-fill-color:#7F7F7F;mso-style-textfill-fill-alpha:100.0%'>Dear Reader,<o:p></o:p></span>
+</p>
+<p class=MsoPlainText>
+  <span style='font-size:9.0pt'></span>
+</p>
+<p class=MsoPlainText>
+  <span style='font-size:9.0pt;color:#7F7F7F;mso-style-textfill-fill-color:#7F7F7F;mso-style-textfill-fill-alpha:100.0%'>[BookingStatement], details as follows:</span><o:p></o:p></span>
+</p>
+<p class=MsoPlainText>
+  <span style='font-size:9.0pt'></span>
+</p>
+
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+    <tr style='height:15.8pt'>
+      <td width=97 style='width:72.5pt;border:solid #BFBFBF 1.0pt;padding:1.45pt 1.45pt 1.45pt 1.45pt;height:15.8pt'>
+        <p class=MsoNormal align=center style='text-align:center'>
+          <span style='font-size:9.0pt;font-family:"Arial",sans-serif'><img width=100 style='width:1.0416in;height:1.0416in' id="Picture_x0020_4" src="[Thumbnail]"></span>
+          <span style='font-size:9.0pt;font-family:"Arial",sans-serif'></span>
+        </p>
+      </td>
+    </tr>
+  </table>
+  
+<p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:"Arial",sans-serif'></span></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+	
+	   <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#595959;mso-style-textfill-fill-color:#595959;mso-style-textfill-fill-alpha:100.0%'>Auditor<o:p></o:p></span></b></p>
+        </td>
+        <td width=330 style='width:247.5pt;border:solid #D9D9D9 1.0pt;border-left:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Auditor]<o:p></o:p></span></p>
+        </td>
+      </tr>
+	  
+	  <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#595959;mso-style-textfill-fill-color:#595959;mso-style-textfill-fill-alpha:100.0%'>Audit Code<o:p></o:p></span></b></p>
+        </td>
+        <td width=330 style='width:247.5pt;border:solid #D9D9D9 1.0pt;border-left:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[AuditCode]<o:p></o:p></span></p>
+        </td>
+      </tr>
+	  
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#595959;mso-style-textfill-fill-color:#595959;mso-style-textfill-fill-alpha:100.0%'>Factory<o:p></o:p></span></b></p>
+        </td>
+        <td width=330 style='width:247.5pt;border:solid #D9D9D9 1.0pt;border-left:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Vendor]<o:p></o:p></span></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#595959;mso-style-textfill-fill-color:#595959;mso-style-textfill-fill-alpha:100.0%'>Brand<o:p></o:p></span></b></p>
+        </td>
+        <td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Brand]<o:p></o:p></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#595959;mso-style-textfill-fill-color:#595959;mso-style-textfill-fill-alpha:100.0%'>Audit Date<o:p></o:p></span></b></p>
+        </td>
+        <td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#BFBFBF;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[AuditDate]<o:p></o:p></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#7F7F7F;mso-style-textfill-fill-color:#7F7F7F;mso-style-textfill-fill-alpha:100.0%'>Start Time<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><u><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[StartTime]<o:p></o:p></span></u></b></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#7F7F7F;mso-style-textfill-fill-color:#7F7F7F;mso-style-textfill-fill-alpha:100.0%'>End Time<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><u><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[EndTime]<o:p></o:p></span></u></b></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#7F7F7F;mso-style-textfill-fill-color:#7F7F7F;mso-style-textfill-fill-alpha:100.0%'>Style No<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#D9D9D9;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><u><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[StyleNo]<o:p></o:p></span></u></b></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Order No<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[OrderNo]<o:p></o:p></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Colors<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Colors]<o:p></o:p></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Sizes<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Sizes]<o:p></o:p></span></p>
+        </td>
+      </tr> 
+       <tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Commission No<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Commissions]<o:p></o:p></span></p>
+        </td>
+      </tr> 
+
+		<tr>
+			<td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+			  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Audit Stage<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+			  <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[AuditStage]<o:p></o:p></span></p>
+			</td>
+      </tr>	
+<tr>
+        <td width=105 valign=top style='width:71.75pt;border:solid #D9D9D9 1.0pt;border-top:none;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Quantity<o:p></o:p></span></b></p></td><td width=330 style='width:247.5pt;border-top:none;border-left:none;border-bottom:solid #D9D9D9 1.0pt;border-right:solid #D9D9D9 1.0pt;background:#F2F2F2;padding:0in 5.4pt 0in 5.4pt'>
+          <p class=MsoNormal><span style='font-size:9.0pt;font-family:"Arial",sans-serif'>[Quantity]<o:p></o:p></span></p>
+        </td>
+      </tr>   
+	  </table>
+<br/>
+        <p class=MsoNormal><span lang=EN-GB style='font-size:9.0pt;font-family:"Arial",sans-serif'></span></p>
+        <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+            </tr>
+              <tr>
+                <td width=601 valign=top style='width:450.5pt;padding:.05in .7pt .7pt .7pt'>
+                  <p class=MsoNormal><b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:gray'>Source</span></b><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#BFBFBF'>Pro   |   </span><span style='font-size:8.0pt;font-family:"Arial",sans-serif;color:#BFBFBF'>a Triple Tree Initiative</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+                </td>
+              </tr>
+            <tr>
+              <td width=601 valign=top style='width:450.5pt;padding:.05in .7pt .7pt .7pt'>
+                <p class=MsoNormal><span style='font-size:8.0pt;font-family:"Arial",sans-serif;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'><a href="[SiteUrl]" title=SourcePro><span style='color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%;text-decoration:none'>sourcepro.3-tree.com</span></a></span><span style='font-size:8.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+              </td>
+            </tr>
+        </table>

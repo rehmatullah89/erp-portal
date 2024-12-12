@@ -1,0 +1,230 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+#tooltip { 
+    display: none; 
+    background-color: 'yellow';
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px;
+}
+
+/*
+.shadowInner {
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+	border:0px solid;
+	border-radius:25px;
+}*/
+
+.shadowInnerIncomplete {
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+	border:0px solid;
+	border-radius:0px 25px 25px 0px;
+}
+
+.shadowInnerComplete {
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+	border:0px solid;
+	border-radius:0px 0px 0px 0px;
+}
+
+
+.shadow {
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+
+	border:0px solid;
+	border-radius:0px 25px 25px 0px;
+}
+.arrow-up {
+	position: relative; 
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	border-bottom: 5px solid darkgrey;
+
+
+	left: -5px;
+	top:-5px;
+}
+
+.arrow-down {
+	position: relative; 
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	border-top: 5px solid darkgrey;
+
+	left: -5px;
+	bottom:-17px;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+
+	border-left: 60px solid green;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+
+	border-right:10px solid blue; 
+}
+
+<!-- popover--> 
+.thumbnail {
+	position: relative; 
+}
+
+
+.thumbnail span {
+
+	position: absolute; 
+	padding: 1px; 
+	
+
+	text-decoration: none;
+	width: 90px;
+
+	
+	margin-left: -15px;
+	left: 30px;
+	font-size:12px;
+	top:-69px;
+
+	line-height: 14px;
+	text-align: center;
+	border-color: rgba(135, 13, 13, 0.91);
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.0);
+	
+}
+
+
+.thumbnailDate {
+	position: relative; 
+}
+
+
+.thumbnailDate span {
+	position: absolute; 
+	padding: 3px; 
+
+
+	text-decoration: none;
+	width: 40px;
+
+	border-color: rgba(135, 13, 13, 0.91);
+	border-radius: 4px;
+	margin-left: -15px;
+	left: -19px;
+	font-size: 12px;
+	bottom:-179px;
+	line-height: 20px;
+	text-align: center;
+
+	background: rgb(255, 255, 255);
+	border: 4px solid rgb(255, 255, 255);
+
+	text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+	box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px 0px;
+}
+
+.thumbnailDate span a{
+	font-size: 7px;
+
+}
+
+
+.thumbnailOntime {
+	position: relative; 
+}
+
+
+.thumbnailOntime span {
+	position: absolute; 
+	padding: 3px; 
+
+
+	text-decoration: none;
+	width: 120px;
+
+	
+	margin-left: -15px;
+	left: -148px;
+	font-size: 16px;
+	font-weight: 4px;
+	bottom:-130px;
+	line-height: 16px;
+	text-align: left;
+	
+}
+
+.graph {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #aeaeae;
+    background-color: #eaeaea;
+
+}
+
+.bar {
+    width: 10px;
+    margin: 1px;
+    display: inline-block;
+    position: relative;
+    background-color: #aeaeae;
+    vertical-align: baseline;
+}
+
+.bottom{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+    height: 80%;
+    border: 1px solid #aeaeae;
+    background-color: #eaeaea;
+
+}

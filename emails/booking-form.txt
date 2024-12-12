@@ -1,0 +1,30 @@
+
+Dear Reader,<br />
+
+<p>The summary of Booking Request # [BookingCode] is as follows.</p>
+
+Buyer: [Buyer]<br />
+Supplier: [Supplier]<br />
+Factory: [Factory]<br />
+Services: [Services]<br />
+Inspection Date: [InspectionDate]<br />
+Shipping Date: [ShippingDate]<br />
+Article: [Article]<br />
+IAN: [IAN]<br />
+Lot Size: [LotSize]<br />
+No of Shipments: [Shipments]<br />
+Sample Pick: [SamplePick]<br />
+Shipping Ports: [Ports]<br />
+Status: [Status]<br />
+<br />
+<b>Remarks:</b><br />
+[Remarks]<br />
+<br />
+<br />
+PDF Booking Form: <a href="[PdfLink]" download>Download</a><br />
+<br />
+<br />
+Triple Tree Customer Portal<br />
+<a href="http://portal.3-tree.com">http://portal.3-tree.com</a><br />
+<br />
+<small style="color:#999999;">This is a system generated e-mail. Please do not reply directly to this e-mail. The originating e-mail account is not monitored.</small>

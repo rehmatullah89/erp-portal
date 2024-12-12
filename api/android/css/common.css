@@ -1,0 +1,497 @@
+
+:focus
+{
+  -moz-outline-style  :  none;
+}
+ 
+html
+{
+  -webkit-text-size-adjust  :  none;
+}
+ 
+body
+{   
+  margin      :  0px;
+  padding     :  0px;
+  background  :  #ffffff;
+}
+
+@-moz-document url-prefix( )
+{
+  body { margin-right:auto !important; }
+}
+ 
+body, div, p, span, li, a, td, b, i
+{
+  font-family  :  verdana, arial, sans-serif;
+  font-size    :  12px;
+  color        :  #666666;
+  position     :  relative;  
+}
+
+small
+{
+  font-family  :  arial, verdana, sans-serif;
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #ffffff;
+}
+ 
+h1
+{
+  font-family     :  verdana, arial, sans-serif;
+  font-weight     :  bold;
+  font-size       :  30px;
+  color           :  #ffffff;
+
+  text-transform  :  uppercase;
+  
+  padding         :  0px;
+  margin          :  0px;
+}
+
+h1.gray
+{
+  color  :  #666666;
+}
+ 
+a
+{
+  color            :  #ffffff;
+  text-decoration  :  none;
+}
+
+a:hover
+{
+  color            :  #ffffff;
+  text-decoration  :  underline;
+}
+
+a.selected
+{
+  font-weight  :  bold;
+}
+
+a.button, a.button:hover
+{
+  font-family            :  verdana, arial, sans-serif;
+  font-weight            :  bold;
+  font-size              :  16px;
+  color                  :  #ffffff;
+  
+  text-decoration        :  none;
+ 
+  display                :  inline-block;
+  padding                :  4px 7px 4px 7px;
+  border                 :  solid 2px #7cb609;
+  background             :  #669900;
+  cursor                 :  pointer;
+  -webkit-border-radius  :  3px;
+  -webkit-appearance     :  none;
+}
+ 
+a img
+{
+  border  :  none;
+}
+
+.br
+{
+  clear        :  both;
+  font-size    :  0px;
+  line-height  :  0px;
+  height       :  0px;
+}
+
+.br5
+{
+  clear        :  both;
+  font-size    :  1px;
+  line-height  :  5px;
+  height       :  5px;
+}
+
+.br10
+{
+  clear        :  both;
+  font-size    :  1px;
+  line-height  :  10px;
+  height       :  10px;
+}
+
+.hidden
+{
+  display  :  none;
+}
+
+.fLeft
+{
+  float  :  left;
+}
+
+.fRight
+{
+  float  :  right;
+}
+
+.hidden
+{
+  display  :  none;
+}
+
+form
+{
+  clear   :  both;
+  margin  :  0px;  
+}
+
+label
+{
+  display  :  inline-block;
+  padding  :  0px;
+  margin   :  0px;
+}
+ 
+input.textbox, textarea
+{
+  font-family            :  verdana, arial, sans-serif;
+  font-weight            :  bold;
+  font-size              :  13px;
+  color                  :  #444444;
+ 
+  padding                :  6px 4px 6px 4px;
+  background-color       :  #ffffff;
+  border                 :  solid 2px #c8c6c7;
+  -webkit-border-radius  :  0px;
+  -webkit-appearance     :  none;   
+}
+
+select
+{
+  font-family            :  verdana, arial, sans-serif;
+  font-size              :  14px;
+  color                  :  #666666;
+               
+  text-indent            :  5px;
+ 
+  padding                :  5px;
+  margin                 :  0px;
+  line-height            :  20px;
+  height                 :  30px;
+  border                 :  solid 1px #b9b9b9;
+  background             :  #ffffff url('../images/icons/arrow.png') 97% 12px no-repeat;
+  -webkit-appearance     :  listbox;
+  -webkit-border-radius  :  6px;
+  outline                :  none;
+}
+ 
+input.button
+{
+  font-family            :  verdana, arial, sans-serif;
+  font-weight            :  bold;
+  font-size              :  16px;
+  color                  :  #ffffff;
+ 
+  padding                :  4px 7px 4px 7px;
+  border                 :  solid 2px #7cb609;
+  background             :  #669900;
+  cursor                 :  pointer;
+  -webkit-border-radius  :  3px;
+  -webkit-appearance     :  none;
+}
+  
+header, section, footer, aside, nav, article, figure
+{
+  clear     :  both;
+  display   :  block;
+  position  :  relative;
+}
+  
+header
+{
+  padding     :  10px;  
+  height      :  35px;
+  background  :  #ffffff;
+  text-align  :  center;
+  overflow    :  hidden;
+}
+
+header label
+{
+  height         :  35px;
+  line-height    :  35px;
+  padding-right  :  5px;
+}
+
+header select#Brand
+{
+  margin-right  :  15px;
+}
+
+section
+{
+  font-family  :  arial, helvetica, sans-serif;
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #ffffff;
+  text-align   :  left;
+}
+
+
+footer
+{
+  font-family  :  arial, helvetica, sans-serif;
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #ffffff;
+  text-align   :  center;
+}
+ 
+footer a
+{
+  font-family      :  arial, helvetica, sans-serif;
+  font-weight      :  normal;
+  font-size        :  11px;
+  color            :  #ffffff;
+   
+  text-decoration  :  none;
+}
+
+footer a:hover
+{
+  font-family      :  arial, helvetica, sans-serif;
+  font-weight      :  normal;
+  font-size        :  11px;
+  color            :  #ffffff;
+   
+  text-decoration  :  underline;
+}
+
+section#Quonda
+{
+  background  :  #83ae00;
+  padding     :  10px;
+}
+
+section#Protoware
+{
+  background  :  #d1d1d1;
+  padding     :  10px;
+}
+
+#Quonda #QuondaChart, #Protoware #ProtowareChart
+{
+  height       :  300px;
+  line-height  :  300px;
+  color        :  #ffffff;
+  text-align   :  center;
+}
+
+#QuondaBar
+{
+  background  :  #526e00;
+  padding     :  5px;
+}
+
+#QuondaBar #DateRange
+{
+  width       :  120px;
+  background  :  #526e00 url('../images/icons/white-arrow.png') 99% 12px no-repeat;  
+  border      :  none;
+  color       :  #ffffff;
+}
+
+#QuondaBar div
+{
+  color        :  #ffffff;
+  padding-top  :  8px;
+}
+
+
+#ProtowareBar
+{
+  background  :  #717171;
+  padding     :  5px;
+}
+
+#ProtowareBar #DateRange
+{
+  width       :  120px;
+  background  :  #717171 url('../images/icons/white-arrow.png') 99% 12px no-repeat;  
+  border      :  none;
+  color       :  #ffffff;
+}
+
+#ProtowareBar div
+{
+  color        :  #ffffff;
+  padding-top  :  8px;
+}
+
+
+
+section#Comments
+{
+  font-family  :  arial, helvetica, sans-serif;
+  font-weight  :  normal;
+  font-size    :  11px;
+  color        :  #444444;
+  text-align   :  left;
+}
+
+section#Comments .picture
+{
+  width                  :  64px;
+  height                 :  48px;
+  overflow               :  hidden;
+  padding                :  1px;
+  margin-right           :  10px;
+  background-color       :  #ffffff;
+  border                 :  solid 1px #888888;  
+  -webkit-border-radius  :  5px;
+}
+
+section#Comments .picture img
+{
+  -webkit-border-radius  :  5px;
+}
+
+section#Comments b
+{
+  font-size  :  12px;
+}
+
+section#Comments td, ection#Comments i
+{
+  font-size  :  11px;
+}
+
+section#Comments i.dateTime
+{
+  font-size  :  10px;
+  color      :  #888888;
+}
+
+section#Comments hr
+{
+  border-top     :  none;
+  border-left    :  none;
+  border-right   :  none;
+  border-bottom  :  dotted 1px #999999;
+  margin         :  10px 0px 10px 0px;
+  padding        :  0px;
+  font-size      :  1px;
+}
+
+ul#Ledends
+{
+  list-style  :  none;
+  padding     :  0px;
+  margin      :  15px 10px 0px 10px;
+}
+
+ul#Ledends li
+{
+  float        :  left;
+  min-width    :  46%;
+  height       :  22px;
+  margin       :  0px 0px 8px 0px;
+  padding      :  0px;
+}
+
+ul#Ledends li div
+{
+  float                  :  left;
+  height                 :  18px;
+  width                  :  18px; 
+  margin-right           :  5px;
+  border                 :  solid 2px #7c7c7c;
+  -webkit-border-radius  :  12px;
+}
+
+ul#Ledends li span
+{
+  display      :  inline-block;
+  height       :  22px;
+  line-height  :  22px;
+  
+  font-size    :  14px;
+  color        :  #777777;
+}
+
+
+
+@media screen and (min-width: 200px) and (max-width: 400px)
+{
+	body, div, p, span, li, a
+	{
+	  font-size  :  11px;
+	}
+	
+	h1
+	{
+	  font-size : 18px;
+	}
+	
+	header
+	{
+	  padding  :  4px;  
+	  height   :  26px;
+	}
+
+	header label
+	{
+	  height         :  30px;
+	  line-height    :  30px;
+	  padding-right  :  3px;
+	}
+
+	header select#Brand
+	{
+	  width         :  100px;
+	  margin-right  :  10px;
+	}
+	
+	header select#Vendor
+	{
+	  width  :  150px;
+	}
+	
+	label span
+	{
+	  display  :  none;
+	}	
+	
+	select
+	{
+	  font-size              :  11px;
+	  text-indent            :  3px;
+	  padding                :  2px;
+	  height                 :  22px;
+	  background             :  #ffffff url('../images/icons/arrow.png') 96% 8px no-repeat;
+	  -webkit-border-radius  :  4px;
+	}	
+	
+	#Quonda #QuondaChart, #Protoware #ProtowareChart
+	{
+	  height       :  180px;
+	  line-height  :  180px;
+	}
+	
+	#Quonda #QuondaChart.ios, #Protoware #ProtowareChart.ios
+	{
+	  height       :  220px;
+	  line-height  :  220px;
+	}
+	
+	#QuondaBar, #ProtowareBar
+	{
+	  clear    :  both;
+	  padding  :  0px 5px 3px 5px;
+	}
+	
+	section#Quonda, section#Protoware
+	{
+	  padding  :  1px 5px 5px 5px;
+	}
+}

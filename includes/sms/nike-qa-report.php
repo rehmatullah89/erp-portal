@@ -1,0 +1,461 @@
+<?
+	/*********************************************************************************************\
+	***********************************************************************************************
+	**                                                                                           **
+	**  Triple Tree Customer Portal                                                              **
+	**  Version 2.0                                                                              **
+	**                                                                                           **
+	**  http://portal.3-tree.com                                                                 **
+	**                                                                                           **
+	**  Copyright 2015 (C) Triple Tree                                                           **
+	**                                                                                           **
+	**  ***************************************************************************************  **
+	**                                                                                           **
+	**  Project Manager:                                                                         **
+	**                                                                                           **
+	**      Name  :  Muhammad Tahir Shahzad                                                      **
+	**      Email :  mtahirshahzad@hotmail.com                                                   **
+	**      Phone :  +92 333 456 0482                                                            **
+	**      URL   :  http://www.mtshahzad.com                                                    **
+	**                                                                                           **
+	**  ***************************************************************************************  **
+	**                                                                                           **
+	**                                                                                           **
+	**                                                                                           **
+	**                                                                                           **
+	***********************************************************************************************
+	\*********************************************************************************************/
+
+	$objDb->execute("BEGIN");
+
+	$sStyle        = strtoupper($sFields[1]);
+	$sAuditCode    = strtoupper($sFields[2]);
+	$sPO           = strtoupper($sFields[3]);
+	$sAuditStage   = strtoupper($sFields[4]);
+	$sAuditStatus  = strtolower($sFields[5]);
+	$iSampleSize   = intval($sFields[6]);
+	$sColors       = $sFields[7];
+	$sAuditResult  = strtoupper($sFields[8]);
+	$iShipQty      = intval($sFields[$iCount - 3]);
+	$iReScreenQty  = intval($sFields[$iCount - 2]);
+	$sComments     = $sFields[$iCount - 1];
+	$iStyleId      = 0;
+	$fDhu          = 0;
+
+	if (strtolower(substr($sComments, 0, 4)) == "qac ")
+		$sComments = substr($sComments, 4);
+
+
+	if ($sStyle == "" || $sAuditCode == "" || $sPO == "" || !@in_array($sAuditStage, $sAuditStages) ||
+	    !@in_array($sAuditStatus, array("1st", "2nd", "3rd", "4th", "5th", "6th")) || $iSampleSize == 0 || $sColors == "" ||
+	    !@in_array($sAuditResult, array("F", "H", "P"))  || $sComments == "")
+	{
+		if ($sStyle == "")
+			$sSubject = "--- Invalid Style No ---";
+
+		if (!@in_array($sAuditStage, $sAuditStages))
+			$sSubject = "--- Invalid Audit Stage ---";
+
+		if (!@in_array($sAuditStatus, array("1st", "2nd", "3rd", "4th", "5th", "6th")))
+			$sSubject = "--- Invalid Audit Status ---";
+
+		if (!@in_array($sAuditResult, array("F", "H", "P")))
+			$sSubject = "--- Invalid Audit Result ---";
+
+		if ($sPO == "")
+			$sSubject = "--- Invalid PO Number ---";
+
+		if ($sAuditCode == "")
+			$sSubject = "--- Invalid Audit Code ---";
+
+		if ($iSampleSize == 0)
+			$sSubject = "--- Invalid Sample Size ---";
+
+		if ($sColors == "")
+			$sSubject = "--- Invalid Color Code ---";
+
+		if ($sComments == "")
+			$sSubject = "--- Invalid QA Comments ---";
+
+		$bFlag = false;
+	}
+
+
+	if ($bFlag == true)
+	{
+		$sAuditDate = getDbValue("audit_date", "tbl_qa_reports", "audit_code='$sAuditCode'");
+
+		if (strtotime(date("Y-m-d")) > (strtotime($sAuditDate) + 172800))  // 2 Days Check
+		{
+			$sSubject = "--- Report Locked ---";
+
+			$bFlag = false;
+		}
+	}
+
+
+	if ($bFlag == true)
+	{
+		// audit code validation
+		$sSQL = "SELECT id, report_id, vendor_id, (SELECT line FROM tbl_lines WHERE id=tbl_qa_reports.line_id) AS _Line FROM tbl_qa_reports WHERE audit_code='{$sAuditCode}'";
+
+		if ($bDebug == true)
+			print ('<span style="color:#666666;">'.$sSQL.'</span><br />');
+
+		if ($objDb->query($sSQL) == true && $objDb->getCount( ) == 1)
+		{
+			$iAuditId  = $objDb->getField(0, 0);
+			$iReportId = $objDb->getField(0, 1);
+			$iVendorId = $objDb->getField(0, 2);
+			$sLine     = $objDb->getField(0, 3);
+		}
+
+		else
+		{
+			$bFlag    = false;
+			$sSubject = "--- Invalid Audit Code ---";
+
+
+			if ($bDebug == true)
+				print ('<span style="color:#ff0000;">ERROR: Invalid Audit Code</span><br />');
+		}
+	}
+
+
+	if ($bFlag == true)
+	{
+		// PO validation
+		$sSQL = "SELECT id, styles FROM tbl_po WHERE order_no='{$sPO}' AND vendor_id='$iVendorId'";
+
+		if ($bDebug == true)
+			print ('<span style="color:#666666;">'.$sSQL.'</span><br />');
+
+		if ($objDb->query($sSQL) == true && $objDb->getCount( ) == 1)
+		{
+			$iPoId     = $objDb->getField(0, 0);
+			$sPoStyles = $objDb->getField(0, 1);
+		}
+
+		else
+		{
+			$bFlag    = false;
+			$sSubject = "--- Invalid PO ---";
+
+			if ($bDebug == true)
+				print ('<span style="color:#ff0000;">ERROR: Invalid PO</span><br />');
+		}
+	}
+
+
+	if ($bFlag == true)
+	{
+		// Style No Validation
+		$sSQL = "SELECT id FROM tbl_styles WHERE style='{$sStyle}' AND id IN ($sPoStyles)";
+
+		if ($bDebug == true)
+			print ('<span style="color:#666666;">'.$sSQL.'</span><br />');
+
+		if ($objDb->query($sSQL) == true && $objDb->getCount( ) > 0)
+			$iStyleId = $objDb->getField(0, 0);
+
+		else
+		{
+			$bFlag    = false;
+			$sSubject = "--- Invalid Style No ---";
+
+
+			if ($bDebug == true)
+				print ('<span style="color:#ff0000;">ERROR: Invalid Style No</span><br />');
+		}
+
+
+		if ($bFlag == true)
+		{
+			$bStyleFlag = false;
+
+			// Style No Validation
+			$sSQL = "SELECT * FROM tbl_po_colors WHERE style_id='$iStyleId' AND po_id='$iPoId'";
+
+			if ($bDebug == true)
+				print ('<span style="color:#666666;">'.$sSQL.'</span><br />');
+
+			if ($objDb->query($sSQL) == true && $objDb->getCount( ) >= 1)
+				$bStyleFlag = true;
+
+			else
+				$bFlag = false;
+
+
+			if ($bStyleFlag == false)
+			{
+				$bFlag    = false;
+				$sSubject = "--- Invalid PO - Style No Combination ---";
+
+
+				if ($bDebug == true)
+					print ('<span style="color:#ff0000;">ERROR: Invalid PO & Style No</span><br />');
+			}
+		}
+	}
+
+
+
+	if ($bFlag == true)
+	{
+		$sSQL  = "UPDATE tbl_qa_reports SET style_id='$iStyleId', po_id='$iPoId', audit_stage='$sAuditStage', audit_status='$sAuditStatus', total_gmts='$iSampleSize', colors='$sColors', audit_result='$sAuditResult', ship_qty='$iShipQty', re_screen_qty='$iReScreenQty', qa_comments='$sComments', date_time=NOW( ), audit_mode='3' WHERE id='$iAuditId'";
+		$bFlag = $objDb->execute($sSQL);
+
+		if ($bDebug == true || $bFlag == false)
+			print ('<span style="color:#0000ff;">- '.$sSQL.'</span><br />');
+	}
+
+
+	if ($bFlag == true)
+	{
+		$sSQL  = "DELETE FROM tbl_qa_report_defects WHERE audit_id='$iAuditId'";
+		$bFlag = $objDb->execute($sSQL);
+
+		if ($bDebug == true || $bFlag == false)
+			print ('<span style="color:#cccccc;">- '.$sSQL.'</span><br />');
+	}
+
+
+	if ($bFlag == true)
+	{
+		$iIndex = 9;
+
+		if (strtolower($sFields[$iIndex]) == "bf")
+		{
+			if ( ($sFields[($iIndex + 1)] == "0 0 0" && strtolower($sFields[($iIndex + 2)]) == "ef") || strtolower($sFields[($iIndex + 1)]) == "ef")
+			{
+				// no defect
+			}
+
+			else
+			{
+				if ($bFlag == true)
+				{
+					$iIndex ++;
+
+					while (strtolower($sFields[$iIndex]) != "ef" && $iIndex < $iCount)
+					{
+						$sRecord = str_replace("  ", " ", $sFields[$iIndex]);
+
+						@list($sCode, $sDefects, $sArea) = @explode(" ", $sRecord);
+
+						$iDefects = intval($sDefects);
+						$iAreaId  = intval($sArea);
+
+						if ($sCode == "" || $iDefects == 0)
+						{
+							if ($sCode == "")
+								$sSubject = "--- Invalid Defect Code: $sCode ---";
+
+							if ($iDefects == 0)
+								$sSubject = "--- Invalid Defects Numbers ---";
+
+							$bFlag = false;
+						}
+
+
+						if ($bFlag == true)
+						{
+							// validating defect code
+							$sSQL = "SELECT id FROM tbl_defect_codes WHERE report_id='$iReportId' AND code='$sCode'";
+
+							if ($bDebug == true)
+								print ('<span style="color:#cccccc;">'.$sSQL.'</span><br />');
+
+							if ($objDb->query($sSQL) == true && $objDb->getCount( ) == 1)
+								$iCodeId = $objDb->getField(0, 0);
+
+							else
+							{
+								$sSubject = "--- Invalid Defect Code - $sCode ---";
+								$bFlag    = false;
+							}
+						}
+
+						if ($iAreaId > 0 && $bFlag == true)
+						{
+							// validating defect code
+							$sSQL = "SELECT * FROM tbl_defect_areas WHERE id='$iAreaId'";
+
+							if ($bDebug == true)
+								print ('<span style="color:#cccccc;">'.$sSQL.'</span><br />');
+
+							if ($objDb->query($sSQL) == false || $objDb->getCount( ) == 0)
+							{
+								$sSubject = "--- Invalid Defect Area Code - $sArea ---";
+								$bFlag    = false;
+							}
+						}
+
+
+						if ($bFlag == true)
+						{
+							$iId = getNextId("tbl_qa_report_defects");
+
+							$sSQL  = "INSERT INTO tbl_qa_report_defects (id, audit_id, code_id, defects, area_id) VALUES ('$iId', '$iAuditId', '$iCodeId', '$iDefects', '$iAreaId')";
+							$bFlag = $objDb->execute($sSQL);
+
+							if ($bDebug == true || $bFlag == false)
+								print ('<span style="color:#999999;">'.$sSQL.'</span><br />');
+						}
+
+						if ($bFlag == false)
+							break;
+
+						$iIndex ++;
+					}
+
+
+					if (strtolower($sFields[$iIndex]) != "ef" && $bFlag == true)
+					{
+						$sSubject = "--- End Flag (ef) Not Found ---";
+						$bFlag    = false;
+					}
+				}
+			}
+		}
+
+		else
+		{
+			$bFlag    = false;
+			$sSubject = "--- Begin Flag (bf) Not Found ---";
+
+			if ($bDebug == true)
+				print ('<span style="color:#ff0000;">ERROR: '.$objDb->error( ).'</span><br />');
+		}
+	}
+
+
+	if ($bFlag == true)
+	{
+		$sSQL = "SELECT total_gmts FROM tbl_qa_reports WHERE id='$iAuditId'";
+		$objDb->query($sSQL);
+
+		$iTotalGmts = $objDb->getField(0, 0);
+
+
+		$sSQL = "SELECT COALESCE(SUM(defects), 0) FROM tbl_qa_report_defects WHERE audit_id='$iAuditId' GROUP BY audit_id";
+		$objDb->query($sSQL);
+
+		$iDefects = $objDb->getField(0, 0);
+
+
+		$fDhu = @round((($iDefects / $iTotalGmts) * 100), 2);
+
+
+		$sSQL  = "UPDATE tbl_qa_reports SET dhu='$fDhu' WHERE id='$iAuditId'";
+		$bFlag = $objDb->execute($sSQL);
+
+		if ($bDebug == true || $bFlag == false)
+			print ('<span style="color:#999999;">'.$sSQL.'</span><br />');
+	}
+
+	if ($bFlag == true && ($sAuditStage == "F" || $sAuditResult == "P" || $sAuditResult == "A" || $sAuditResult == "B"))
+	{
+		$sSQL  = "UPDATE tbl_qa_reports SET status='$sAuditResult' WHERE id='$iAuditId' AND status=''";
+		$bFlag = $objDb->execute($sSQL);
+	}
+
+	if ($bFlag == true && $sAuditStage == "F" && $sAuditResult == "P")
+	{
+		$sSQL  = "UPDATE tbl_qa_reports SET approved_sample='Yes', shipping_mark='Y', packing_check='Y' WHERE id='$iAuditId'";
+		$bFlag = $objDb->execute($sSQL);
+	}
+
+
+	if ($bFlag == true)
+	{
+		$sSQL = "SELECT vendor FROM tbl_vendors WHERE id='$iVendorId'";
+		$objDb->query($sSQL);
+
+		$sVendor = $objDb->getField(0, 0);
+
+
+		$sSQL = "SELECT style, sub_brand_id FROM tbl_styles WHERE id='$iStyleId'";
+		$objDb->query($sSQL);
+
+		$sStyle   = $objDb->getField(0, 0);
+		$iBrandId = (int)$objDb->getField(0, 1);
+
+
+		$sSQL = "SELECT brand FROM tbl_brands WHERE id='$iBrandId'";
+		$objDb->query($sSQL);
+
+		$sBrand = $objDb->getField(0, 0);
+
+
+		// DR Above Target Line
+		@include($sBaseDir."includes/sms/dr-above-target-line.php");
+
+
+		// Continuity Defect
+		@include($sBaseDir."includes/sms/continuity-defect.php");
+
+
+		// Final Audit Conducted
+		if ($sAuditStage == "F")
+			@include($sBaseDir."includes/sms/final-audit.php");
+
+		else if (!@in_array($sAuditResult, array("P", "A", "B")))
+			@include($sBaseDir."includes/sms/inline-audit.php");
+
+
+		// Final Audit Approval
+		if ($sAuditStage == "F" && $sAuditResult == "P")
+			@include($sBaseDir."includes/sms/final-audit-approval.php");
+
+
+		// Updating VSR
+		$sSQL  = "SELECT audit_date, po_id, additional_pos FROM tbl_qa_reports WHERE id='$iAuditId' AND audit_stage='F' AND audit_result='P'";
+		$objDb->query($sSQL);
+
+		if ($bDebug == true || $bFlag == false)
+			print ('<span style="color:#999999;">'.$sSQL.'</span><br />');
+
+		if ($objDb->getCount( ) == 1)
+		{
+			$sDate       = $objDb->getField(0, 0);
+			$sPos        = $objDb->getField(0, 1);
+			$sAdditional = $objDb->getField(0, 2);
+
+			if ($sAdditional != "")
+				$sPos .= (",".$sAdditional);
+
+
+			$sSQL = "UPDATE tbl_vsr SET final_audit_date='$sDate' WHERE po_id IN ($sPos)";
+			$objDb->execute($sSQL);
+
+			if ($bDebug == true || $bFlag == false)
+				print ('<span style="color:#999999;">'.$sSQL.'</span><br />');
+		}
+
+
+		$sSubject = "*** Audit Entry posted successfully ***";
+
+		$objDb->execute("COMMIT");
+	}
+
+	else
+		$objDb->execute("ROLLBACK");
+
+
+	if ($bDebug == true)
+		print "<br />";
+
+
+	if (@strlen($sSender) >= 10)
+	{
+		$sStatus = $objSms->send($sSender, "", $sSms, $sSubject, true);
+
+		if ($bDebug == true)
+		{
+			print ("SMS Status: ".$sSubject."<br />");
+			print ("Mobile: ".$sSender."<br />");
+			print ("Mail Status: ".$sStatus."<br />");
+		}
+	}
+?>

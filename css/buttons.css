@@ -1,0 +1,670 @@
+
+/**********************************************************************************************
+***********************************************************************************************
+**                                                                                           **
+**  Triple Tree Customer Portal                                                              **
+**  Version 2.0                                                                              **
+**                                                                                           **
+**  http://portal.3-tree.com                                                                 **
+**                                                                                           **
+**  Copyright 2008-15 (C) Triple Tree                                                        **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**  Project Manager:                                                                         **
+**                                                                                           **
+**      Name  :  Muhammad Tahir Shahzad                                                      **
+**      Email :  mtahirshahzad@hotmail.com                                                   **
+**      Phone :  +92 333 456 0482                                                            **
+**      URL   :  http://www.mtshahzad.com                                                    **
+**                                                                                           **
+**  ***************************************************************************************  **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+**                                                                                           **
+***********************************************************************************************
+**********************************************************************************************/
+
+
+input.btnSendBooking
+{
+  background  :  #494949 url('../images/buttons/btn-send-booking-gray.png') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  margin-right: 2px;
+  width       :  116px;
+  height      :  30px;
+  cursor      :  pointer;
+  margin-left: 742px;
+}
+
+input.btnSendBooking:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-send-booking-green.png') no-repeat;
+}
+
+input.btnDonate
+{
+  background  :  #494949 url('../images/buttons/btn-donate-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  84px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnDonate:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-donate-green.svg') no-repeat;
+}
+
+input.btnSubmit
+{
+  background  :  #494949 url('../images/buttons/btn-submit-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  68px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnSubmit:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-submit-green.svg') no-repeat;
+}
+
+input.btnImport
+{
+  background  :  #494949 url('../images/buttons/btn-import-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  86px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnImport:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-import-green.svg') no-repeat;
+}
+
+input.btnSave
+{
+  background  :  #494949 url('../images/buttons/btn-save-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  66px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnSave:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-save-green.svg') no-repeat;
+}
+
+input.btnCancel
+{
+  background  :  #494949 url('../images/buttons/btn-cancel-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  67px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnCancel:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-cancel-green.svg') no-repeat;
+}
+
+
+input.btnSkip
+{
+  background  :  #494949 url('../images/buttons/btn-skip-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  59px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnSkip:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-skip-green.jpg') no-repeat;
+}
+
+
+input.btnCompare
+{
+  background  :  #494949 url('../images/buttons/btn-compare-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  100px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnCompare:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-compare-green.jpg') no-repeat;
+}
+
+input.btnBack
+{
+  background  :  #494949 url('../images/buttons/btn-back-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  66px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnBack:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-back-green.svg') no-repeat;
+}
+
+input.btnCopy
+{
+  background  :  #494949 url('../images/buttons/btn-copy-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  65px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnCopy:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-copy-green.svg') no-repeat;
+}
+
+input.btnExport
+{
+  background  :  #494949 url('../images/buttons/btn-export-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  90px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnExport:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-export-green.svg') no-repeat;
+}
+
+input.btnAdd, a.btnAdd
+{
+  background  :  #494949 url('../images/buttons/btn-add-gray.svg') no-repeat;  
+  text-align  :  right; 
+  border      :  none;
+  padding     :  0px;
+  width       :  65px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnAdd:hover, a.btnAdd:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-add-green.svg') no-repeat;
+}
+
+input.btnExportActualVsr
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-export-actual-vsr-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  174px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnExportActualVsr:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-export-actual-vsr-green.jpg') no-repeat;
+}
+
+input.btnExportPlannedVsr
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-export-planned-vsr-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  188px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnExportPlannedVsr:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-export-planned-vsr-green.jpg') no-repeat;
+}
+
+input.btnExportComparativeVsr
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-export-comparative-vsr-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  224px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnExportComparativeVsr:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-export-comparative-vsr-green.jpg') no-repeat;
+}
+
+.poGrandTotal input.btnAdd
+{
+  background  :  #b50000 url('../images/buttons/btn-add-red.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  65px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+.poGrandTotal input.btnAdd:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-add-green.jpg') no-repeat;
+}
+
+input.btnDelete
+{
+  background  :  #494949 url('../images/buttons/btn-delete-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  74px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnDelete:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-delete-green.svg') no-repeat;
+}
+
+.poGrandTotal input.btnDelete
+{
+  background  :  #b50000 url('../images/buttons/btn-delete-red.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  84px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+.poGrandTotal input.btnDelete:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-delete-green.jpg') no-repeat;
+}
+
+input.btnSearch
+{
+  background  :  #fff url('../images/buttons/btn-search-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  130px;
+  height      :  40px;
+  cursor      :  pointer;
+}
+
+input.btnSearch:hover
+{
+  background  :  #fff url('../images/buttons/btn-search-red.svg') no-repeat;
+}
+
+input.btnBackup
+{
+  background  :  #494949 url('../images/buttons/btn-backup-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  103px;
+  height      :  40px;
+  cursor      :  pointer;
+}
+
+input.btnBackup:hover
+{
+  background  :  url('../images/buttons/btn-backup-red.jpg') no-repeat;
+}
+
+input.btnSignIn
+{
+  background  :  #fff url('../images/buttons/btn-signin-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  104px;
+  height      :  32px;
+  cursor      :  pointer;
+}
+
+input.btnSignIn:hover
+{
+  background  :  #fff url('../images/buttons/btn-signin-red.svg') no-repeat;
+}
+
+input.btnSubmitCurve
+{
+  background  :  #fff url('../images/buttons/btn-submit-green-curve.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  104px;
+  height      :  32px;
+  cursor      :  pointer;
+}
+
+input.btnSubmitCurve:hover
+{
+  background  :  #fff url('../images/buttons/btn-submit-red-curve.svg') no-repeat;
+}
+
+input.btnGo
+{
+  background  :  #aba7a6 url('../images/buttons/btn-go-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  39px;
+  height      :  28px;
+  cursor      :  pointer;
+}
+
+input.btnGo:hover
+{
+  background  :  url('../images/buttons/btn-go-red.jpg') no-repeat;
+}
+
+input.btnDuplicate
+{
+  background  :  #494949 url('../images/buttons/btn-duplicate-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  117px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnDuplicate:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-duplicate-green.jpg') no-repeat;
+}
+
+input.btnProduction
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-production-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  200px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnProduction:hover, input.btnProductionSelected, input.btnProductionSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-production-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  200px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnQuality
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-quality-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  158px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnQuality:hover, input.btnQualitySelected, input.btnQualitySelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-quality-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  158px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnDevelopment
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-development-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  215px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnDevelopment:hover, input.btnDevelopmentSelected, input.btnDevelopmentSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-development-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  215px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnFabric
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-fabric-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  148px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnFabric:hover, input.btnFabricSelected, input.btnFabricSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-fabric-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  148px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnCompliance
+{
+  background  :  #494949 url('../images/buttons/vsr/btn-compliance-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  206px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnCompliance:hover, input.btnComplianceSelected, input.btnComplianceSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/vsr/btn-compliance-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  206px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnProfile
+{
+  background  :  #494949 url('../images/buttons/hr/btn-profile-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  82px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnProfile:hover, input.btnProfileSelected, input.btnProfileSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-profile-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  82px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnNotifications
+{
+  background  :  #494949 url('../images/buttons/hr/btn-notifications-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  132px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnNotifications:hover, input.btnNotificationsSelected, input.btnNotificationsSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-notifications-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  132px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnCalendar
+{
+  background  :  #494949 url('../images/buttons/hr/btn-calendar-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  94px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnCalendar:hover, input.btnCalendarSelected, input.btnCalendarSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-calendar-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  94px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnMessages
+{
+  background  :  #494949 url('../images/buttons/hr/btn-messages-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  96px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnMessages:hover, input.btnMessagesSelected, input.btnMessagesSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-messages-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  96px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnPhotos
+{
+  background  :  #494949 url('../images/buttons/hr/btn-photos-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  87px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnPhotos:hover, input.btnPhotosSelected, input.btnPhotosSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-photos-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  87px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnSchedule
+{
+  background  :  #494949 url('../images/buttons/hr/btn-schedule-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  104px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnSchedule:hover, input.btnScheduleSelected, input.btnScheduleSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/hr/btn-schedule-green.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  104px;
+  height      :  30px;
+  cursor      :  pointer;  
+}
+
+input.btnUpload
+{
+  background  :  #494949 url('../images/buttons/btn-upload-gray.jpg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  86px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnUpload:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-upload-green.jpg') no-repeat;
+}
+
+
+input.btnPolicies
+{
+  background  :  #494949 url('../images/buttons/btn-policies-gray.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  156px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+input.btnPolicies:hover, input.btnPoliciesSelected, input.btnPoliciesSelected:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-policies-green.svg') no-repeat;
+  border      :  none;
+  padding     :  0px;
+  width       :  156px;
+  height      :  30px;
+  cursor      :  pointer;
+}
+
+.qaMeasurementButtons
+{
+  height         :  30px;  
+  background     :  #38414A;  
+  margin-bottom  :  1px; 
+  text-align     :  right;
+}
+
+span.btnAddMeasurement
+{
+  display     :  inline-block;
+  background  :  #38414A url('../images/buttons/btn-add-gray.svg') no-repeat;  
+  width       :  65px;
+  height      :  30px;
+}
+
+span.btnAddMeasurement:hover
+{
+  background  :  #b6e600 url('../images/buttons/btn-add-green.svg') no-repeat;
+}
